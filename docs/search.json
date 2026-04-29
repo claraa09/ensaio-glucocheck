@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "resultados.html",
+    "href": "resultados.html",
+    "title": "Resultados",
+    "section": "",
+    "text": "Warning: package 'tidyverse' was built under R version 4.5.3\n\n\nWarning: package 'gtsummary' was built under R version 4.5.3\n\n\nWarning: package 'here' was built under R version 4.5.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 301\ncontrolo\nN = 151\nintervencao\nN = 151\n\n\n\n\nidade\n57 (46, 67)\n59 (49, 69)\n57 (44, 67)\n\n\nsexo\n\n\n\n\n\n\n\n\n    F\n14 (47%)\n8 (53%)\n6 (40%)\n\n\n    M\n16 (53%)\n7 (47%)\n9 (60%)\n\n\nhba1c_baseline\n8.25 (7.90, 8.60)\n8.30 (7.90, 8.70)\n8.20 (7.80, 8.60)\n\n\nhba1c_6meses\n8.00 (7.20, 8.40)\n8.10 (7.70, 8.70)\n7.55 (7.10, 8.20)\n\n\n    Unknown\n3\n0\n3\n\n\nglicemia_jejum_baseline\n160 (142, 183)\n163 (144, 179)\n158 (141, 186)\n\n\nglicemia_jejum_6meses\n154 (122, 178)\n160 (140, 183)\n133 (112, 156)\n\n\n    Unknown\n3\n0\n3\n\n\npeso_baseline\n88 (81, 96)\n91 (85, 100)\n87 (78, 96)\n\n\npeso_6meses\n89 (79, 96)\n90 (86, 98)\n85 (79, 94)\n\n\n    Unknown\n3\n0\n3\n\n\ndes_sf\n7.15 (6.20, 8.30)\n6.80 (5.80, 8.30)\n7.70 (6.90, 8.40)\n\n\nsatisfacao\n\n\n\n\n\n\n\n\n    1\n5 (17%)\n5 (33%)\n0 (0%)\n\n\n    2\n6 (20%)\n4 (27%)\n2 (13%)\n\n\n    3\n5 (17%)\n1 (6.7%)\n4 (27%)\n\n\n    4\n9 (30%)\n4 (27%)\n5 (33%)\n\n\n    5\n5 (17%)\n1 (6.7%)\n4 (27%)\n\n\n\n1 Median (Q1, Q3); n (%)"
+  },
+  {
+    "objectID": "resultados.html#características-basais",
+    "href": "resultados.html#características-basais",
+    "title": "Resultados",
+    "section": "",
+    "text": "Warning: package 'tidyverse' was built under R version 4.5.3\n\n\nWarning: package 'gtsummary' was built under R version 4.5.3\n\n\nWarning: package 'here' was built under R version 4.5.3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 301\ncontrolo\nN = 151\nintervencao\nN = 151\n\n\n\n\nidade\n57 (46, 67)\n59 (49, 69)\n57 (44, 67)\n\n\nsexo\n\n\n\n\n\n\n\n\n    F\n14 (47%)\n8 (53%)\n6 (40%)\n\n\n    M\n16 (53%)\n7 (47%)\n9 (60%)\n\n\nhba1c_baseline\n8.25 (7.90, 8.60)\n8.30 (7.90, 8.70)\n8.20 (7.80, 8.60)\n\n\nhba1c_6meses\n8.00 (7.20, 8.40)\n8.10 (7.70, 8.70)\n7.55 (7.10, 8.20)\n\n\n    Unknown\n3\n0\n3\n\n\nglicemia_jejum_baseline\n160 (142, 183)\n163 (144, 179)\n158 (141, 186)\n\n\nglicemia_jejum_6meses\n154 (122, 178)\n160 (140, 183)\n133 (112, 156)\n\n\n    Unknown\n3\n0\n3\n\n\npeso_baseline\n88 (81, 96)\n91 (85, 100)\n87 (78, 96)\n\n\npeso_6meses\n89 (79, 96)\n90 (86, 98)\n85 (79, 94)\n\n\n    Unknown\n3\n0\n3\n\n\ndes_sf\n7.15 (6.20, 8.30)\n6.80 (5.80, 8.30)\n7.70 (6.90, 8.40)\n\n\nsatisfacao\n\n\n\n\n\n\n\n\n    1\n5 (17%)\n5 (33%)\n0 (0%)\n\n\n    2\n6 (20%)\n4 (27%)\n2 (13%)\n\n\n    3\n5 (17%)\n1 (6.7%)\n4 (27%)\n\n\n    4\n9 (30%)\n4 (27%)\n5 (33%)\n\n\n    5\n5 (17%)\n1 (6.7%)\n4 (27%)\n\n\n\n1 Median (Q1, Q3); n (%)"
+  },
+  {
+    "objectID": "resultados.html#outcome-primário",
+    "href": "resultados.html#outcome-primário",
+    "title": "Resultados",
+    "section": "Outcome primário",
+    "text": "Outcome primário"
+  },
+  {
+    "objectID": "ensaio-site/about.html",
+    "href": "ensaio-site/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "ensaio-site/index.html",
+    "href": "ensaio-site/index.html",
+    "title": "cd ensaio-site",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ensaio-site",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  }
+]

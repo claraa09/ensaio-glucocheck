@@ -1,0 +1,44 @@
+---
+title: "Resultados"
+format: html
+---
+
+## Características basais
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+library(gtsummary)
+library(here)
+
+dados <- read_csv(here("data", "raw", "glucocheck.csv"))
+
+dados |>
+  select(grupo, idade, sexo, hba1c_baseline, hba1c_6meses, glicemia_jejum_baseline, glicemia_jejum_6meses, peso_baseline, peso_6meses, des_sf, satisfacao) |>
+  tbl_summary(by = grupo) |>
+  add_overall()
+```
+
+## Outcome primário
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4
+
+ggplot(dados |> filter(!is.na(hba1c_6meses)),
+    aes(x = grupo, y = hba1c_6meses, colour = grupo)) +
+  geom_boxplot(outlier.shape = NA, width = 0.4, linewidth = 0.7) +
+  geom_jitter(width = 0.12, alpha = 0.7, size = 2.5) +
+  scale_colour_manual(
+    values = c("intervencao" = "#2C3E50", "controlo" = "#7A9B9E")
+  ) +
+  labs(
+    x     = "Grupo",
+    y     = "Hemoglobina glicada aos 6 meses (%)",
+    title = "GlucoCheck"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "none")
+```
