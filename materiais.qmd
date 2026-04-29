@@ -12,7 +12,7 @@ A gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridad
 
 O formulário de recolha de dados foi estruturado para capturar todas as variáveis essenciais do protocolo SPIRIT.
 
-\[{{< fa file-pdf >}} Visualizar Modelo do CRF (PDF)\](data/CRF.pdf)
+[📄 Visualizar Modelo do CRF (PDF)](data/CRF.pdf)
 
 ### Plataforma REDCap
 
@@ -26,4 +26,4 @@ Para a entrada de dados eletrónica (eCRF), utilizou-se a plataforma \*\*REDCap\
 
 ## Protótipo
 
--   \[{{< fa external-link-alt >}} Visualização do protótipo\](https://www.figma.com/proto/M5mClSPCalkSuboRTm7FJh/Untitled?node-id=1-44&t=3c78lYErSsrurPl4-1)
+-   \[🔗 Visualização do protótipo no Figma\]([https://www.figma.com/proto/M5mClSPCalkSuboRTm7FJh/Untitled?node-id=1-44&t=3c78lYErSsrurPl4-1](https://www.figma.com/proto/M5mClSPCalkSuboRTm7FJh/GlucoCheck?node-id=1-44&t=3c78lYErSsrurPl4-1))

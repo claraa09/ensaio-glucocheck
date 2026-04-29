@@ -9,7 +9,7 @@ Nesta página pode consultar o protocolo detalhado do ensaio clínico, seguindo 
 
 Pode descarregar o protocolo no seguinte formato:
 
--   \[{{< fa file-pdf >}} Protocolo em PDF\](data/Protocolo_SPIRIT.pdf)
+-   <a href="data/Protocolo_SPIRIT.pdf" target="_blank">📄 Protocolo em PDF</a>
 
 ---
 

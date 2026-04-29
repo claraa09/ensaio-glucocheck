@@ -88,7 +88,7 @@
     "href": "materiais.html#protótipo",
     "title": "Materiais",
     "section": "Protótipo",
-    "text": "Protótipo\n\n[{{&lt; fa external-link-alt &gt;}} Visualização do protótipo](https://www.figma.com/proto/M5mClSPCalkSuboRTm7FJh/Untitled?node-id=1-44&t=3c78lYErSsrurPl4-1)"
+    "text": "Protótipo\n\n[🔗 Visualização do protótipo no Figma](https://www.figma.com/proto/M5mClSPCalkSuboRTm7FJh/Untitled?node-id=1-44&t=3c78lYErSsrurPl4-1)"
   },
   {
     "objectID": "materiais.html#dispositivos-e-escalas",
@@ -130,7 +130,7 @@
     "href": "materiais.html#recolha-e-gestão-de-dados",
     "title": "Materiais",
     "section": "Recolha e gestão de Dados",
-    "text": "Recolha e gestão de Dados\nA gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridade e segurança da informação clínica.\n\nCRF (Case Report Form)\nO formulário de recolha de dados foi estruturado para capturar todas as variáveis essenciais do protocolo SPIRIT.\n[{{&lt; fa file-pdf &gt;}} Visualizar Modelo do CRF (PDF)](data/CRF.pdf)\n\n\nPlataforma REDCap\nPara a entrada de dados eletrónica (eCRF), utilizou-se a plataforma **REDCap** (Research Electronic Data Capture), alojada nos servidores da FMUP.\n\nSegurança: Acesso restrito via autenticação institucional.\nValidação: Implementação de regras de *data quality* para evitar erros de preenchimento.\n[{{&lt; fa external-link-alt &gt;}} Aceder ao Projeto no REDCap](https://redcap.med.up.pt/…)"
+    "text": "Recolha e gestão de Dados\nA gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridade e segurança da informação clínica.\n\nCRF (Case Report Form)\nO formulário de recolha de dados foi estruturado para capturar todas as variáveis essenciais do protocolo SPIRIT.\n📄 Visualizar Modelo do CRF (PDF)\n\n\nPlataforma REDCap\nPara a entrada de dados eletrónica (eCRF), utilizou-se a plataforma **REDCap** (Research Electronic Data Capture), alojada nos servidores da FMUP.\n\nSegurança: Acesso restrito via autenticação institucional.\nValidação: Implementação de regras de *data quality* para evitar erros de preenchimento.\n[{{&lt; fa external-link-alt &gt;}} Aceder ao Projeto no REDCap](https://redcap.med.up.pt/…)"
   },
   {
     "objectID": "protocolo.html",
@@ -144,7 +144,7 @@
     "href": "protocolo.html#download-dos-documentos",
     "title": "Protocolo SPIRIT",
     "section": "Download dos Documentos",
-    "text": "Download dos Documentos\nPode descarregar o protocolo no seguinte formato:\n\n[{{&lt; fa file-pdf &gt;}} Protocolo em PDF](data/Protocolo_SPIRIT.pdf)"
+    "text": "Download dos Documentos\nPode descarregar o protocolo no seguinte formato:\n\n📄 Protocolo em PDF"
   },
   {
     "objectID": "protocolo.html#resumo-do-protocolo",
