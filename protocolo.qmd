@@ -1,6 +1,329 @@
 ---
-title: "Protocolo"
+title: "Protocolo SPIRIT"
 format: html
 ---
 
-## Resumo do protocolo
+Nesta página pode consultar o protocolo detalhado do ensaio clínico, seguindo as normas SPIRIT.
+
+## Download dos Documentos
+
+Pode descarregar o protocolo no seguinte formato:
+
+-   \[{{< fa file-pdf >}} Protocolo em PDF\](data/Protocolo_SPIRIT.pdf)
+
+---
+
+## Resumo do Protocolo
+
+# **Protocolo de Ensaio Clínico**
+
+## **Informação Administrativa**
+
+### **Título do Estudo**
+
+Eficácia da Aplicação Móvel GlucoCheck com Integração Bluetooth versus Cuidados Convencionais no Controlo Glicémico de Adultos com Diabetes Tipo 2: Um Ensaio Clínico Randomizado em Cuidados de Saúde Primários
+
+### **Título Abreviado**
+
+GlucoCheck: App e Controlo da Diabetes Tipo 2
+
+### **Autores e Afiliações**
+
+**Investigadores Principais:**
+
+-   João Dantas, Faculdade de Medicina da Universidade do Porto
+
+-   Margarida Machado, Faculdade de Medicina da Universidade do Porto
+
+-   Maria Clara Soares, Faculdade de Medicina da Universidade do Porto
+
+**Instituição:**\
+Faculdade de Medicina da Universidade do Porto
+
+**Contacto:**\
+Email: [up202506418\@up.pt](mailto:up202506418@up.pt)
+
+### **Identificação do Ensaio**
+
+**Tipo de estudo:** Ensaio clínico randomizado, controlado, paralelo
+
+**Data de início prevista:** Março de 2026
+
+**Data de conclusão prevista:** Agosto de 2026
+
+## **1. Introdução**
+
+### **1.1 Racional**
+
+A Diabetes Mellitus Tipo 2 constitui um dos principais desafios de saúde pública a nível global, apresentando elevada prevalência e impacto significativo na morbilidade e mortalidade. Estima-se que centenas de milhões de adultos vivam com esta doença, sendo particularmente frequente na população entre os 40 e os 75 anos. Em muitos casos, o controlo metabólico permanece subótimo, frequentemente evidenciado por níveis elevados de HbA1c (Hemoglobina Glicada), um marcador fundamental do controlo glicémico a médio prazo. O mau controlo da glicemia associa-se a complicações microvasculares e macrovasculares, incluindo doença cardiovascular, neuropatia, retinopatia e nefropatia, com impacto significativo na qualidade de vida e nos custos para os sistemas de saúde. Assim, estratégias eficazes para melhorar o controlo glicémico em contexto de cuidados primários são fundamentais para reduzir a carga clínica e económica associada à doença.
+
+Apesar da disponibilidade de terapêutica farmacológica eficaz e de recomendações clínicas bem estabelecidas, a gestão da diabetes em contexto real apresenta várias limitações. O modelo tradicional de seguimento baseia-se sobretudo em consultas periódicas, frequentemente trimestrais, com aconselhamento nutricional e educação para a doença de forma relativamente pontual. Este modelo pode ser insuficiente para promover mudanças comportamentais sustentadas, uma vez que a gestão da diabetes exige decisões diárias relacionadas com alimentação, atividade física e monitorização glicémica. Adicionalmente, a adesão à automonitorização da glicemia e ao registo alimentar tende a ser irregular, e o feedback fornecido ao doente entre consultas é limitado. Estas lacunas contribuem para níveis persistentes de controlo metabólico inadequado em muitos doentes seguidos em cuidados de saúde primários.
+
+Nos últimos anos, intervenções digitais baseadas em aplicações móveis têm emergido como ferramentas promissoras para apoiar a autogestão da diabetes. Aplicações móveis podem integrar funcionalidades como registo alimentar estruturado, monitorização glicémica em tempo real, feedback automatizado, objetivos personalizados e educação adaptativa. Estes mecanismos podem aumentar o envolvimento do doente, promover maior consciência dos padrões glicémicos e reforçar comportamentos de autocuidado. Além disso, a integração com dispositivos como glucómetros com conectividade Bluetooth permite recolha automática de dados e monitorização mais consistente. Estudos prévios sugerem que intervenções digitais deste tipo podem contribuir para melhorias modestas mas clinicamente relevantes nos níveis de hemoglobina glicada e em indicadores comportamentais de autocuidado.
+
+Neste contexto, o presente estudo pretende avaliar a eficácia da aplicação GlucoCheck como complemento ao seguimento habitual em cuidados de saúde primários. O ensaio clínico randomizado compara a utilização da aplicação — que inclui integração com glucómetro Bluetooth, feedback nutricional automatizado, objetivos glicémicos personalizados e suporte educacional adaptativo — com o modelo de cuidados habituais sem suporte digital. O outcome primário é a variação da HbA1c aos seis meses, sendo também avaliados outcomes comportamentais e clínicos adicionais. A escolha do comparador reflete a prática clínica corrente, permitindo determinar o benefício incremental da intervenção digital. Este estudo procura, assim, preencher uma lacuna na evidência sobre a utilização de aplicações móveis integradas na gestão da diabetes em contexto de cuidados primários, contribuindo para avaliar a sua relevância clínica e potencial implementação em larga escala.
+
+### **1.2 Objetivos**
+
+#### **Objetivo Primário**
+
+Avaliar a eficácia da utilização da aplicação móvel GlucoCheck na redução absoluta dos níveis de hemoglobina glicada (HbA1c) em adultos com Diabetes Mellitus Tipo 2, após 6 meses de intervenção, em comparação com os cuidados habituais em cuidados de saúde primários.
+
+#### **Objetivos Secundários**
+
+Os objetivos secundários deste estudo são:
+
+1.  Comparar a variação do peso corporal e da glicemia em jejum entre o grupo de intervenção e o grupo de controlo.
+
+2.  Determinar a taxa de adesão ao autocontrolo glicémico e ao registo alimentar através da monitorização dos dados inseridos na aplicação.
+
+3.  Avaliar a alteração na autoeficácia e empoderamento do doente utilizando a escala Diabetes Empowerment Scale Short Form (DES-SF).
+
+4.  Analisar os níveis de satisfação dos utilizadores com os cuidados digitais e o conhecimento adquirido sobre diabetes ao longo do estudo.
+
+## **2. Métodos**
+
+### **2.1 Desenho do Estudo**
+
+Este estudo configura-se como um **ensaio clínico controlado e aleatorizado** (RCT) de grupos paralelos, de centro único, com **uma razão de randomização de 1:1**. Trata-se de um **estudo piloto (pré-teste)** desenhado para **avaliar a viabilidade da intervenção digital em ambiente real de Unidade de Saúde Familiar** (USF).
+
+A duração total do estudo é de **6 meses** (24 semanas). A **randomização** será efetuada através de uma sequência gerada por computador para garantir a **ocultação** da alocação. O **grupo de intervenção** utilizará a app GlucoCheck integrada com glucómetro Bluetooth, enquanto o **grupo de controlo** manterá o acompanhamento trimestral standard. Serão realizados **momentos de avaliação (follow-up) aos 3 e 6 meses** para medir a evolução dos parâmetros clínicos e comportamentais.
+
+**Características do desenho:**
+
+-   **Randomização:** 1:1 (intervenção : controlo)
+
+-   **Duração:** 6 meses (24 semanas)
+
+-   **Setting:** 1 Unidade de Saúde Familiar (USF)
+
+-   **Fase:** Estudo piloto (pré-teste)
+
+-   **Tamanho da amostra:** 30 participantes (15 intervenção + 15 controlo)
+
+**Timeline:**
+
+| **Fase** | **Duração** | **Descrição** |
+|:---|:---|:---|
+| Recrutamento | \[2 semanas\] | Triagem de processos clínicos e convite em consulta médica. |
+| Baseline | \[1 semana\] | Consentimento, colheita de sangue (HbA1c) e randomização. |
+| Intervenção | \[21 semanas\] | Período de utilização da App (Intervenção) vs. Cuidados Standard. |
+| Follow-up | \[12 e 24 semanas\] | Avaliação aos 3 e 6 meses. |
+
+### **2.2 População do Estudo**
+
+#### **2.2.1 Critérios de Inclusão**
+
+Serão elegíveis para participação neste estudo indivíduos que cumpram **todos** os seguintes critérios:
+
+1.  **Critério idade** - Indivíduos com idade compreendida entre os 40 e os 75 anos
+
+2.  **Critério diagnóstico** - Diagnóstico de Diabetes Mellitus Tipo 2 confirmado no processo clínico
+
+3.  **Critério clínico específico** - HbA1c entre 7.0% e 9.5%
+
+4.  **Critério de capacidade** - Posse e capacidade de usar smartphone Android ou iOS
+
+5.  **Critério de literacia** - Literacia funcional e digital mínima para ler mensagens, interpretar gráficos simples e registar dados em português.
+
+6.  **Critério de consentimento** - Capacidade cognitiva para fornecer consentimento informado e esclarecido por escrito.
+
+7.  **Critério de disponibilidade** - Estar em seguimento regular na USF e ter disponibilidade para realizar as medições e consultas previstas durante 6 meses.
+
+#### **2.2.2 Critérios de Exclusão**
+
+Serão excluídos do estudo indivíduos que apresentem **qualquer** dos seguintes critérios:
+
+1.  **Terapêutica** - Utilização atual de insulinoterapia ou bombas de infusão de insulina.
+
+2.  **Condições Médicas** - Diagnóstico de insuficiência renal crónica (estádio IV ou V), insuficiência cardíaca grave ou doenças oncológicas ativas.
+
+3.  **Tratamentos concomitantes** - Participação noutro ensaio clínico
+
+4.  **Gravidez/lactação** - Mulheres grávidas ou em período de amamentação (devido às alterações hormonais no perfil glicémico).
+
+5.  **Barreiras tecnológicas** - Sem acesso a smartphone ou internet, falta de acesso regular à internet (Wi-Fi ou dados móveis) ou incapacidade motora/visual que impeça o uso de dispositivos móveis.
+
+6.  **Segurança** - Histórico recente (últimos 12 meses) de episódios recorrentes de hipoglicemia grave ou cetoacidose diabética.
+
+#### **2.2.3 Processo de Recrutamento**
+
+O recrutamento será realizado de forma proativa na **Unidade de Saúde Familiar** (USF) selecionada. O processo de recrutamento seguirá as seguintes etapas estruturadas:
+
+-   Uma **extração de dados do sistema informático** será efetuada para identificar utentes que **cumpram os critérios de idade, diagnóstico e valores de HbA1c**.
+
+-   Os médicos de família e enfermeiros da equipa de saúde serão informados sobre os **candidatos potenciais**.
+
+-   Durante as consultas de rotina de diabetes, **o médico convidará o utente a participar**, entregando o Folheto Informativo.
+
+-   **Interessados** são encaminhados para o investigador principal para a sessão de esclarecimento, verificação detalhada dos critérios e assinatura do consentimento informado.
+
+-   A randomização ocorre imediatamente após a validação de todos os critérios de inclusão.
+
+### **2.3 Intervenções**
+
+#### **2.3.1 Grupo de Intervenção**
+
+Os participantes alocados para o grupo de intervenção receberão acesso à aplicação móvel GlucoCheck, uma ferramenta de saúde digital concebida para otimizar a autogestão da Diabetes Mellitus Tipo 2 através da monitorização em tempo real e do suporte à decisão comportamental.
+
+**Aplicação GlucoCheck:**
+
+A GlucoCheck atua como um ecossistema integrado que processa dados fisiológicos e comportamentais para fornecer feedback personalizado.
+
+Funcionalidades principais:
+
+1.  **Monitorização glicémica integrada e alertas padrão**
+
+    -   **O que faz:** Realiza a integração automática com o gluccómetro do participante via Bluetooth, eliminando erros de registo manual e permitindo a visualização imediata de gráficos de evolução da HbA1c estimada. Para além disso, o sistema utiliza algoritmos de deteção para emitir alertas automáticos perante padrões glicémicos problemáticos, como tendências para hipoglicemia ou hiperglicemia persistente.
+
+    -   **Como o participante interage:** O utilizador realiza a medição capilar e a app sincroniza os dados instantaneamente, apresentando uma interpretação visual (código de cores) do resultado.
+
+    -   **Frequência de uso esperada:** No mínimo duas vezes ao dia (em jejum e pós-prandial), ou conforme a recomendação clínica individualizada.
+
+2.  **Registo alimentar com feedback nutricional e educação adaptativa**
+
+    -   **O que faz:** Oferece uma interface para registo de refeições que gera feedback nutricional automatizado e conteúdo educativo adaptativo. A app analisa a composição das refeições inseridas e sugere ajustes imediatos para melhorar o controlo pós-prandial.
+
+    -   **Como o participante interage:** O utilizador insere os alimentos consumidos através de pesquisa numa base de dados ou fotografia, recebendo uma análise instantânea dos macronutrientes e do seu potencial na glicemia.
+
+    -   **Frequência de uso esperada:** Diária, idealmente em todas as refeições principais (pequeno-almoço, almoço e jantar).
+
+3.  **Objetivos glicémicos semanais e mensagens motivacionais**
+
+    -   **O que faz:** Estabelece metas semanais personalizadas com base no perfil do utilizador e envia notificações Push com mensagens motivacionais baseadas no progresso real e no cumprimento das metas de atividade e glicemia.
+
+    -   **Como o participante interage:** O utilizador visualiza o seu progresso num painel de controlo (dashboard) e recebe notificações interativas que reforçam comportamentos positivos ou sugerem correções de rota.
+
+    -   **Frequência de uso esperada:** Interação passiva contínua (notificações) e consulta ativa do progresso pelo menos uma vez por semana.
+
+**Instalação e Onboarding:**
+
+A instalação ocorrerá durante a consulta inicial, onde um investigador auxiliará no download da aplicação nas lojas oficiais (iOS/Android) e na criação de uma conta encriptada. O processo inclui um tutorial interativo (onboarding) que orienta o utilizador na sincronização do glucómetro via Bluetooth e na navegação pelas interfaces de registo alimentar e visualização de gráficos.
+
+**Suporte técnico:**
+
+O participantes poderão obter ajuda para problemas de conectividade, erros de software ou dificuldades de navegação através de uma linha de apoio telefónica dedicada e de um canal de chat técnico integrado na própria aplicação, disponível em horário laboral.
+
+**Cuidado concomitante:**
+
+Os participantes mantêm o seu cuidado médico habitual nos cuidados de saúde primários, incluindo as consultas programadas com a equipa de medicina familiar e a manutenção da terapêutica farmacológica não-insulínica previamente prescrita.
+
+#### **2.3.2 Grupo Controlo**
+
+Os participantes randomizados para o grupo controlo receberão o tratamento convencional de acordo com as diretrizes clínicas nacionais.
+
+**Cuidado habitual e material educativo::**
+
+Os participantes receberão o acompanhamento padrão nos cuidados de saúde primários, que consiste em consultas de rotina e monitorização laboratorial periódica. Será fornecido material educativo em formato papel (folhetos informativos) sobre alimentação saudável, importância do exercício físico e gestão de diabetes, mas sem acesso a ferramentas digitais de feedback em tempo real.
+
+**Justificação do comparador:**
+
+Este comparador foi selecionado por representar o padrão de atendimento atual (Standard of Care) no Sistema Nacional de Saúde. Esta abordagem permite avaliar de forma ética e rigorosa a eficácia incremental da intervenção GlucoCheck face à prática clínica vigente, garantindo que nenhum participante receba menos do que o cuidado recomendado.
+
+#### **2.3.3 Critérios de Descontinuação**
+
+Participantes serão retirados do estudo se:
+
+1.  Ocorrer a revogação do consentimento informado por vontade própria do participante a qualquer momento e sem necessidade de justificação.
+
+2.  For iniciada terapêutica com insulina ou ocorrer uma alteração farmacológica que invalide os pressupostos clínicos da intervenção.
+
+3.  Surgir uma condição médica grave ou hospitalização que impossibilite a utilização segura e eficaz da aplicação móvel.
+
+4.  Se verificar a ausência de registos de dados e impossibilidade de contacto pela equipa de investigação por período superior a 30 dias.
+
+5.  Houver partilha de credenciais de acesso com terceiros ou qualquer ação que comprometa a integridade e segurança dos dados no software.
+
+6.  For determinada a cessação da participação pelo investigador principal ou pela comissão de ética por motivos de segurança do participante
+
+## **3. Avaliações e Outcomes**
+
+### **3.1 Outcome Primário**
+
+Hemoglobina Glicada (HbA1c)
+
+-   **Instrumento:** Análise laboratorial de sangue venoso (método padrão ouro para controlo glicémico a médio prazo).
+
+-   **Momento de avaliação:** Baseline (T0) e às 24 semanas (T6 meses).
+
+-   **Definição de sucesso:** Redução absoluta estatisticamente significativa nos níveis de HbA1c no grupo de intervenção comparativamente ao grupo de controlo, ou uma maior percentagem de participantes a atingir o alvo terapêutico (\< 7,0%).
+
+### **3.2 Outcomes Secundários**
+
+1.  **Parâmetros Clínicos e Antropométricos:**
+
+    -   **Glicemia em Jejum:** Medição laboratorial (mg/dL) aos 0, 3 e 6 meses.
+
+    -   **Peso Corporal:** Medição em balança calibrada na USF (kg) para calcular a variação do IMC.
+
+2.  **Adesão e Autogestão:**
+
+    -   **Frequência de Monitorização:** Média de picadas no dedo por semana (extraída dos dados do glucómetro/App).
+
+    -   **Adesão ao Registo Alimentar:** Percentagem de dias com registo completo de refeições na App GlucoCheck.
+
+3.  **Variáveis Psicossociais**
+
+    -   **Autoeficácia (Escala DES-SF):** Pontuação no questionário Diabetes Empowerment Scale Short Form para medir a confiança do doente na gestão da doença.
+
+    -   **Conhecimento sobre Diabetes:** Questionário de literacia em saúde específico para diabetes aplicado no início e fim do estudo.
+
+4.  **Satisfação e Usabilidade:**
+
+    -   **Satisfação com os Cuidados:** Escala visual analógica ou questionário CSQ-8 aplicado ao grupo de intervenção na semana 24.
+
+## **4. Análise Estatística**
+
+O plano de análise estatística será executado utilizando o R Studio.
+
+### **4.1 Tratamento de Dados e Dropouts**
+
+Dada a duração de 6 meses e o risco de desistência, será utilizada uma Análise por Intenção de Tratar (ITT). Isto garante que todos os 30 participantes randomizados sejam incluídos na análise, utilizando o método de imputação Last Observation Carried Forward (LOCF) para lidar com dados em falta nas avaliações de follow-up.
+
+### **4.2 Análise Descritiva**
+
+Será realizada uma caracterização demográfica e clínica da amostra no baseline. As variáveis contínuas (idade, HbA1c, peso) serão descritas através de médias e desvios-padrão (ou medianas e intervalos interquartis, caso a distribuição não seja normal). As variáveis categóricas serão expressas em frequências absolutas e relativas.
+
+### **4.3 Testes de Hipóteses**
+
+Para avaliar a eficácia da intervenção, serão realizados os seguintes procedimentos:
+
+1.  **Comparação entre Grupos (Outcome Primário):** Para comparar a variação da HbA1c entre o grupo de intervenção e o grupo de controlo às 24 semanas, será utilizado o teste t de Student para amostras independentes (para comparar as médias de uma variável contínua entre dois grupos diferentes que não têm relação entre si).
+
+2.  **Análise Longitudinal:** Para avaliar o efeito da intervenção ao longo do tempo (Baseline vs. 3 meses vs. 6 meses), será aplicada uma ANOVA de Medidas Repetidas (um teste estatístico usado quando medimos a mesma variável no mesmo grupo de pessoas em vários momentos diferentes), permitindo observar a interação entre o fator “Tempo” e o fator “Grupo”.
+
+3.  **Outcomes Secundários:** A comparação das pontuações da escala de autoeficácia (DES-SF) e satisfação será feita através do teste de Mann-Whitney U (por serem dados ordinais).
+
+    -   A correlação entre a frequência de uso da app e a descida da HbA1c será analisada através do coeficiente de correlação de Pearson.
+
+## **5. Ética e dissiminação**
+
+Este estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam:
+
+1.  Consentimento informado
+
+2.  Garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital.
+
+3.  Privacidade e proteção de dados
+
+4.  Tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados.
+
+5.  Desigualdade no acesso (equidade)
+
+6.  Possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica.
+
+7.  Sobrecarga do participante
+
+8.  Exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar.
+
+9.  Proteção do grupo controlo
+
+10. Garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção.
+
+11. Gestão de ajustes terapêuticos
+
+12. Assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.
+
+**Versão:** 1.0\
+**Data desta versão:** 08/03/2026\
+**Autores desta versão:** João Dantas, Margarida Machado e Maria Clara Soares
