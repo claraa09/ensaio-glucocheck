@@ -47,5 +47,26 @@
     "title": "ensaio-site",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "equipa.html",
+    "href": "equipa.html",
+    "title": "Equipa",
+    "section": "",
+    "text": "O projeto GlucoCheck foi desenvolvido por alunos da Licenciatura em Saúde Digital e Inovação Biomédica, no âmbito da Unidade Curricular de Ferramentas da Produtividade, da Faculdade de Medicina da Universidade do Porto (FMUP)."
+  },
+  {
+    "objectID": "equipa.html#membros-do-grupo",
+    "href": "equipa.html#membros-do-grupo",
+    "title": "Equipa",
+    "section": "Membros do Grupo",
+    "text": "Membros do Grupo\n\nJoão Dantas\n(responsável por; contacto)\n\n\nMargarida Machado\n(responsável por; contacto)\n\n\nMaria Clara Soares\n(responsável por; contacto)"
+  },
+  {
+    "objectID": "equipa.html#orientação",
+    "href": "equipa.html#orientação",
+    "title": "Equipa",
+    "section": "Orientação",
+    "text": "Orientação\n(Colocar docentes responsáveis pela orientação e o respetivo contacto)"
   }
 ]
