@@ -1,3 +1,15 @@
 ---
 title: "Materiais"
 ---
+
+Nesta página encontram-se os recursos utilizados durante o desenvolvimento do projeto GlucoCheck.
+
+## Documentação Principal
+
+## Protótipo
+
+https://www.figma.com/proto/M5mClSPCalkSuboRTm7FJh/Untitled?node-id=1-44&t=3c78lYErSsrurPl4-1
+
+## Dispositivos e Escalas
+
+## Dicionário de Dados

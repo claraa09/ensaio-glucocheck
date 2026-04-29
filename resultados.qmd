@@ -3,24 +3,34 @@ title: "Resultados"
 format: html
 ---
 
-## Características basais
+## Fluxograma dos participantes
+
+(colocar fluxograma)
+
+## Caracterização da amostra
 
 ```{r}
 #| echo: false
 #| message: false
+#| warning: false
+#| label: tbl-basal
+#| tbl-cap: "Tabela 1: Caracterização basal dos participantes do ensaio Glucocheck."
 library(tidyverse)
 library(gtsummary)
-library(here)
 
-dados <- read_csv(here("data", "raw", "glucocheck.csv"))
+dados <- read_csv("data/raw/glucocheck.csv")
 
-dados |>
+tabela_basal <- dados |>
   select(grupo, idade, sexo, hba1c_baseline, hba1c_6meses, glicemia_jejum_baseline, glicemia_jejum_6meses, peso_baseline, peso_6meses, des_sf, satisfacao) |>
   tbl_summary(by = grupo) |>
-  add_overall()
+  add_overall() |>
+  add_p()
+tabela_basal
 ```
 
-## Outcome primário
+## Resultados Principais
+
+### Outcome primário
 
 ```{r}
 #| echo: false
@@ -42,3 +52,9 @@ ggplot(dados |> filter(!is.na(hba1c_6meses)),
   theme_minimal(base_size = 13) +
   theme(legend.position = "none")
 ```
+
+### Outcomes Secundários
+
+### Gráficos
+
+(colocar algum gráfico que ajude a visualizar a diferença entre grupos)
