@@ -8,16 +8,24 @@ O projeto **GlucoCheck** foi desenvolvido por alunos da Licenciatura em Saúde D
 
 ### João Dantas
 
-(responsável por; contacto)
+Email: [up202506116\@up.pt](mailto:up202506116@up.pt)
 
 ### Margarida Machado
 
-(responsável por; contacto)
+Email: [up202506418\@up.pt](mailto:up202506418@up.pt)
 
 ### Maria Clara Soares
 
-(responsável por; contacto)
+Email: [up202504216\@up.pt](mailto:up202504216@up.pt)
 
 ## Orientação
 
-(Colocar docentes responsáveis pela orientação e o respetivo contacto)
+-   Professor Tiago Jacinto - Email: [tiagojacinto\@med.up.pt](mailto:tiagojacinto@med.up.pt)
+
+-   Professora Rute Almeida - Email: [rutealmeida\@med.up.pt](mailto:rutealmeida@med.up.pt)
+
+-   Professor Vinicius Lima - Email: [vlima\@med.up.pt](mailto:vlima@med.up.pt)
+
+-   Professor Renato Silva - Email: [rsilva\@med.up.pt](mailto:rsilva@med.up.pt)
+
+-   Professor Alberto Freitas - Email: [alberto\@med.up.pt](mailto:alberto@med.up.pt)

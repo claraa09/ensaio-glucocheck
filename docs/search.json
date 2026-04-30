@@ -44,9 +44,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "ensaio-site",
+    "title": "Ensaio GlucoCheck",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Ensaio clínico aleatorizado paralelo (1:1) sobre a eficácia de uma aplicação móvel no controlo da Diabetes Mellitus Tipo 2."
   },
   {
     "objectID": "equipa.html",
@@ -60,14 +60,14 @@
     "href": "equipa.html#membros-do-grupo",
     "title": "Equipa",
     "section": "Membros do Grupo",
-    "text": "Membros do Grupo\n\nJoão Dantas\n(responsável por; contacto)\n\n\nMargarida Machado\n(responsável por; contacto)\n\n\nMaria Clara Soares\n(responsável por; contacto)"
+    "text": "Membros do Grupo\n\nJoão Dantas\nEmail: up202506116@up.pt\n\n\nMargarida Machado\nEmail: up202506418@up.pt\n\n\nMaria Clara Soares\nEmail: up202504216@up.pt"
   },
   {
     "objectID": "equipa.html#orientação",
     "href": "equipa.html#orientação",
     "title": "Equipa",
     "section": "Orientação",
-    "text": "Orientação\n(Colocar docentes responsáveis pela orientação e o respetivo contacto)"
+    "text": "Orientação\n\nProfessor Tiago Jacinto - Email: tiagojacinto@med.up.pt\nProfessora Rute Almeida - Email: rutealmeida@med.up.pt\nProfessor Vinicius Lima - Email: vlima@med.up.pt\nProfessor Renato Silva - Email: rsilva@med.up.pt\nProfessor Alberto Freitas - Email: alberto@med.up.pt"
   },
   {
     "objectID": "materiais.html",
@@ -130,7 +130,7 @@
     "href": "materiais.html#recolha-e-gestão-de-dados",
     "title": "Materiais",
     "section": "Recolha e gestão de Dados",
-    "text": "Recolha e gestão de Dados\nA gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridade e segurança da informação clínica.\n\nCRF (Case Report Form)\nO formulário de recolha de dados foi estruturado para capturar todas as variáveis essenciais do protocolo SPIRIT.\n📄 Visualizar Modelo do CRF (PDF)\n\n\nPlataforma REDCap\nPara a entrada de dados eletrónica (eCRF), utilizou-se a plataforma **REDCap** (Research Electronic Data Capture), alojada nos servidores da FMUP.\n\nSegurança: Acesso restrito via autenticação institucional.\nValidação: Implementação de regras de *data quality* para evitar erros de preenchimento.\n[{{&lt; fa external-link-alt &gt;}} Aceder ao Projeto no REDCap](https://redcap.med.up.pt/…)"
+    "text": "Recolha e gestão de Dados\nA gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridade e segurança da informação clínica.\n\nCRF (Case Report Form)\nO formulário de recolha de dados foi estruturado para capturar todas as variáveis essenciais do protocolo SPIRIT.\n📄 Visualizar Modelo do CRF (PDF)\n\n\nPlataforma REDCap\nPara a entrada de dados eletrónica (eCRF), utilizou-se a plataforma **REDCap** (Research Electronic Data Capture), alojada nos servidores da FMUP.\n\nSegurança: Acesso restrito via autenticação institucional.\nValidação: Implementação de regras de *data quality* para evitar erros de preenchimento.\n\n[Aceder ao Projeto no REDCap] (https://redcap.med.up.pt/…)"
   },
   {
     "objectID": "protocolo.html",
@@ -194,5 +194,26 @@
     "title": "Protocolo SPIRIT",
     "section": "5. Ética e dissiminação",
     "text": "5. Ética e dissiminação\nEste estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam:\n\nConsentimento informado\nGarantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital.\nPrivacidade e proteção de dados\nTratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados.\nDesigualdade no acesso (equidade)\nPossível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica.\nSobrecarga do participante\nExigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar.\nProteção do grupo controlo\nGarantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção.\nGestão de ajustes terapêuticos\nAssegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.\n\nVersão: 1.0\nData desta versão: 08/03/2026\nAutores desta versão: João Dantas, Margarida Machado e Maria Clara Soares"
+  },
+  {
+    "objectID": "index.html#sumário",
+    "href": "index.html#sumário",
+    "title": "Ensaio GlucoCheck",
+    "section": "Sumário",
+    "text": "Sumário\n\nPopulação: Adultos entre 40 e 75 anos com Diabetes Tipo 2 e HbA1c entre 7,0% e 9,5%.\nIntervenção: Uso da App GlucoCheck sincronizada com glucómetro Bluetooth + registo alimentar durante 24 semanas (6 meses).\nControlo: Cuidados habituais da USF com material educativo em papel.\nOutcome primário: Variação da Hemoglobina Glicada (HbA1c) entre o Baseline (T0) e os 6 meses (T6M).\nN: 30 participantes (15 por grupo)."
+  },
+  {
+    "objectID": "index.html#navegação",
+    "href": "index.html#navegação",
+    "title": "Ensaio GlucoCheck",
+    "section": "Navegação",
+    "text": "Navegação\n\n\nProtocolo: desenho do estudo e SPIRIT\n\n\nMateriais: eCRF, REDCap e protótipo\n\n\nResultados: análise do outcome primário\n\n\nEquipa: membros e contactos"
+  },
+  {
+    "objectID": "index.html#processo-de-recrutamento",
+    "href": "index.html#processo-de-recrutamento",
+    "title": "Ensaio GlucoCheck",
+    "section": "Processo de Recrutamento",
+    "text": "Processo de Recrutamento\n\nO recrutamento é feito em 5 etapas principais:\nExtração de dados do sistema informático da USF para identificar candidatos.\nConvite inicial feito pelo Médico de Família na consulta de rotina.\nSessão de esclarecimento com o Investigador Principal.\nVerificação final de critérios e assinatura do Consentimento (TCLE).\nColheita de sangue para HbA1c baseline e randomização 1:1 gerada por computador."
   }
 ]

@@ -1,3 +1,45 @@
 ---
 title: "Ensaio GlucoCheck"
 ---
+
+Ensaio clínico aleatorizado paralelo (1:1) sobre a eficácia de uma aplicação móvel no controlo da Diabetes Mellitus Tipo 2.
+
+## Sumário
+
+-   **População:** Adultos entre 40 e 75 anos com Diabetes Tipo 2 e HbA1c entre 7,0% e 9,5%.
+
+-   **Intervenção:** Uso da App GlucoCheck sincronizada com glucómetro Bluetooth + registo alimentar durante 24 semanas (6 meses).
+
+-   **Controlo:** Cuidados habituais da USF com material educativo em papel.
+
+-   **Outcome primário:** Variação da Hemoglobina Glicada (HbA1c) entre o Baseline (T0) e os 6 meses (T6M).
+
+-   **N:** 30 participantes (15 por grupo).
+
+## Navegação
+
+<ul>
+
+<li><a href="protocolo.html">Protocolo</a>: desenho do estudo e SPIRIT</li>
+
+<li><a href="materiais.html">Materiais</a>: eCRF, REDCap e protótipo</li>
+
+<li><a href="resultados.html">Resultados</a>: análise do outcome primário</li>
+
+<li><a href="equipa.html">Equipa</a>: membros e contactos</li>
+
+</ul>
+
+## Processo de Recrutamento
+
+1.  O recrutamento é feito em 5 etapas principais:
+
+2.  Extração de dados do sistema informático da USF para identificar candidatos.
+
+3.  Convite inicial feito pelo Médico de Família na consulta de rotina.
+
+4.  Sessão de esclarecimento com o Investigador Principal.
+
+5.  Verificação final de critérios e assinatura do Consentimento (TCLE).
+
+6.  Colheita de sangue para HbA1c baseline e randomização 1:1 gerada por computador.
