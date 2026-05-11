@@ -4,6 +4,26 @@ title: "Materiais"
 
 Nesta página encontram-se os recursos utilizados durante o desenvolvimento do projeto GlucoCheck.
 
+## Diagramas
+
+### Diagrama de Atividades
+
+Diagrama do percurso do paciente no estudo clínico
+
+![](images/Diagrama do percurso do paciente (1) (1).png){width="304"}
+
+Diagrama do percurso como utilizador da aplicação digital
+
+![](images/Diagrama do utilizador da aplicação-2026-03-21-135442 (1) (1).png){width="452"}
+
+### Diagrama de Casos de Uso
+
+![](images/casos de uso-01.png){width="811"}
+
+### Diagrama de Sequências
+
+![](images/sequência.png)
+
 ## Recolha e gestão de Dados
 
 A gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridade e segurança da informação clínica.

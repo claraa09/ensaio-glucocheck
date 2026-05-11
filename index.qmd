@@ -32,14 +32,14 @@ Ensaio clínico aleatorizado paralelo (1:1) sobre a eficácia de uma aplicação
 
 ## Processo de Recrutamento
 
-1.  O recrutamento é feito em 5 etapas principais:
+O recrutamento é feito em 5 etapas principais:
 
-2.  Extração de dados do sistema informático da USF para identificar candidatos.
+1.  Extração de dados do sistema informático da USF para identificar candidatos.
 
-3.  Convite inicial feito pelo Médico de Família na consulta de rotina.
+2.  Convite inicial feito pelo Médico de Família na consulta de rotina.
 
-4.  Sessão de esclarecimento com o Investigador Principal.
+3.  Sessão de esclarecimento com o Investigador Principal.
 
-5.  Verificação final de critérios e assinatura do Consentimento (TCLE).
+4.  Verificação final de critérios e assinatura do Consentimento (TCLE).
 
-6.  Colheita de sangue para HbA1c baseline e randomização 1:1 gerada por computador.
+5.  Colheita de sangue para HbA1c baseline e randomização 1:1 gerada por computador.
