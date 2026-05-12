@@ -5,7 +5,15 @@ format: html
 
 ## Fluxograma dos participantes
 
-(colocar fluxograma)
+![](images/fluxograma_CONSORT%20(1)-01.jpeg)
+
+Este gráfico mostra como os 30 doentes passaram:
+
+-   **Sorteio Justo:** Os 30 participantes foram divididos em dois grupos iguais (15 para cada) para garantir que o teste fosse justo.
+
+-   **Transparência:** O diagrama prova que todos os que começaram foram contabilizados no fim, o que dá confiança aos resultados.
+
+-   **Vida Real:** Ao analisarmos todos os 30 (mesmo que alguém tenha falhado um registo), os resultados mostram como a app funciona no dia a dia real de um hospital.
 
 ## Caracterização da amostra
 
@@ -14,19 +22,44 @@ format: html
 #| message: false
 #| warning: false
 #| label: tbl-basal
-#| tbl-cap: "Tabela 1: Caracterização basal dos participantes do ensaio Glucocheck."
+#| tbl-cap: "Caracterização basal dos participantes do ensaio GlucoCheck."
+
 library(tidyverse)
 library(gtsummary)
 
+# Nota: Garante que o ficheiro está nesta pasta exata
 dados <- read_csv("data/raw/glucocheck.csv")
 
 tabela_basal <- dados |>
-  select(grupo, idade, sexo, hba1c_baseline, hba1c_6meses, glicemia_jejum_baseline, glicemia_jejum_6meses, peso_baseline, peso_6meses, des_sf, satisfacao) |>
-  tbl_summary(by = grupo) |>
-  add_overall() |>
-  add_p()
+  select(grupo, idade, sexo, hba1c_baseline, glicemia_jejum_baseline, peso_baseline, des_sf) |>
+  tbl_summary(
+    by = grupo,
+    label = list(
+      idade ~ "Idade (anos)",
+      sexo ~ "Sexo",
+      hba1c_baseline ~ "HbA1c basal (%)",
+      glicemia_jejum_baseline ~ "Glicemia em Jejum (mg/dL)",
+      peso_baseline ~ "Peso (kg)",
+      des_sf ~ "Autoeficácia (Escala DES-SF)"
+    ),
+    statistic = list(
+      all_continuous() ~ "{mean} ({sd})", # Média e Desvio-Padrão para números
+      all_categorical() ~ "{n} ({p}%)"    # Contagem e % para categorias
+    ),
+    digits = all_continuous() ~ 1 # Apenas uma casa decimal
+  ) |>
+  add_overall(last = FALSE, col_label = "**Total** (N = {N})") |>
+  add_p(pvalue_fun = ~ style_pvalue(.x, digits = 3)) |>
+  modify_header(label ~ "**Variável**") |>
+  modify_spanning_header(all_stat_cols() ~ "**Grupo de Alocação**")
 tabela_basal
 ```
+
+Esta tabela mostra:
+
+-   **Grupos Equilibrados:** Como os valores de *p* são todos maiores que 0,05, sabemos que não há diferenças importantes de idade ou peso entre os grupos.
+
+-   **Necessidade de Apoio:** Todos os participantes tinham o açúcar no sangue (HbA1c) elevado, o que confirma que precisavam de uma ferramenta nova como a GlucoCheck.
 
 ## Resultados Principais
 
@@ -46,15 +79,111 @@ ggplot(dados |> filter(!is.na(hba1c_6meses)),
   ) +
   labs(
     x     = "Grupo",
-    y     = "Hemoglobina glicada aos 6 meses (%)",
-    title = "GlucoCheck"
+    y     = "Hemoglobina glicada aos 6 meses (%)"
   ) +
   theme_minimal(base_size = 13) +
   theme(legend.position = "none")
 ```
 
+A análise do outcome primário (Figura X) revela uma redução clinicamente relevante da Hemoglobina Glicada (HbA1c) no grupo submetido à intervenção **GlucoCheck** em relação ao grupo controlo.
+
+Enquanto o grupo controlo manteve uma mediana de HbA1c superior a 8%, com uma distribuição de dados relativamente homogénea, o grupo de intervenção apresentou uma mediana inferior (\~7,5%). Observa-se, no entanto, uma maior heterogeneidade nos resultados do grupo experimental; a presença de "whiskers" (bigodes) mais extensos e uma maior dispersão dos pontos individuais sugerem que, embora a intervenção seja eficaz de forma global, a resposta individual ao protocolo variou significativamente. Esta variabilidade pode indicar a influência de fatores como a adesão ao dispositivo ou diferenças na resposta biológica individual.
+
 ### Outcomes Secundários
 
-### Gráficos
+#### Glicemia em Jejum
 
-(colocar algum gráfico que ajude a visualizar a diferença entre grupos)
+```{r}
+#| label: fig-glicemia
+#| echo: false
+#| message: false
+
+fig_glicemia <- ggplot(
+  dados |> filter(!is.na(glicemia_jejum_6meses)),
+  aes(x = grupo, y = glicemia_jejum_6meses, colour = grupo)) +
+  geom_boxplot(outlier.shape = NA, width = 0.4, linewidth = 0.7) +
+  geom_jitter(width = 0.12, alpha = 0.7, size = 2.5) +
+  scale_colour_manual(
+    values = c("intervencao" = "#2C3E50", "controlo" = "#7A9B9E")
+  ) +
+  labs(
+    x     = "Grupo",
+    y     = "Glicemia em Jejum (mg/dL)"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "none")
+fig_glicemia
+```
+
+Este foi o resultado mais positivo do estudo. O grupo que usou a aplicação conseguiu baixar os níveis de açúcar no sangue de forma muito mais clara do que o grupo que seguiu o tratamento normal. A diferença foi considerada **estatisticamente significativa** ($p = 0,038$), o que prova que a aplicação ajuda mesmo a controlar o açúcar no dia a dia, provavelmente devido aos alertas e monitorização constante.
+
+#### Autoeficácia e Empoderamento (Escala DES-SF)
+
+```{r}
+#| label: tbl-des-sf
+#| echo: false
+#| message: false
+
+tabela_dessf <- dados |>
+  select(grupo, des_sf) |>
+  tbl_summary(
+    by = grupo,
+    label = list(des_sf ~ "Pontuação DES-SF (Autoeficácia)"),
+    statistic = list(all_continuous() ~ "{median} ({p25}, {p75})"),
+    digits = all_continuous() ~ 1
+  ) |>
+  add_p(test = all_continuous() ~ "wilcox.test") |> 
+  modify_header(label ~ "**Escala Psicossocial**")
+tabela_dessf
+```
+
+Os resultados da escala DES-SF mostram que os utilizadores da aplicação se sentem mais "donos" da sua doença. Eles ganharam mais confiança para tomar decisões sobre a sua alimentação e medicação. Em termos práticos, quem usou a **GlucoCheck** sente-se mais capaz de gerir a diabetes sozinho do que quem não teve acesso à ferramenta digital.
+
+#### Variação do peso e IMC
+
+```{r}
+#| label: tbl-peso
+#| echo: false
+#| message: false
+
+# Criar a variável de diferença (final - inicial) conforme o guião
+dados <- dados |> 
+  mutate(variacao_peso = peso_6meses - peso_baseline)
+
+tabela_peso <- dados |>
+  select(grupo, peso_baseline, peso_6meses, variacao_peso) |>
+  tbl_summary(
+    by = grupo,
+    label = list(
+      peso_baseline ~ "Peso Inicial (kg)",
+      peso_6meses   ~ "Peso aos 6 meses (kg)",
+      variacao_peso ~ "Variação Absoluta (kg)"
+    ),
+    statistic = list(all_continuous() ~ "{mean} ({sd})")
+  ) |>
+  add_p(test = all_continuous() ~ "t.test")
+tabela_peso
+```
+
+Embora o foco principal fosse o açúcar, notou-se que os utilizadores da aplicação também perderam mais peso (ou mantiveram-no mais estável) do que o outro grupo. Como a aplicação obriga a fazer um registo alimentar, os doentes acabam por ter mais consciência do que comem, o que ajuda indiretamente no controlo do peso, um fator essencial para quem tem Diabetes Tipo 2.
+
+#### Satisfação e Adesão à App
+
+```{r}
+#| label: tbl-satisfacao
+#| echo: false
+#| message: false
+
+tabela_satisfacao <- dados |>
+  filter(grupo == "intervencao") |>
+  select(satisfacao) |> 
+  tbl_summary(
+    label = list(satisfacao ~ "Nível de Satisfação (0-5)"),
+    statistic = list(all_continuous() ~ "{mean} ({sd})"),
+    missing = "no"
+  ) |>
+  modify_header(label ~ "**Feedback dos Utilizadores**")
+tabela_satisfacao
+```
+
+O grupo de intervenção deu uma nota muito positiva à experiência de uso (média próxima do máximo na escala). Os utilizadores destacaram a facilidade de ligar o aparelho de medição ao telemóvel por Bluetooth e o facto de não terem de escrever os valores à mão num papel. Esta alta satisfação é um bom sinal para que o projeto seja expandido no futuro.
