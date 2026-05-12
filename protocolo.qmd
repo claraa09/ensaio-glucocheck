@@ -93,7 +93,7 @@ Este estudo configura-se como um **ensaio clínico controlado e aleatorizado** (
 
 A duração total do estudo é de **6 meses** (24 semanas). A **randomização** será efetuada através de uma sequência gerada por computador para garantir a **ocultação** da alocação. O **grupo de intervenção** utilizará a app GlucoCheck integrada com glucómetro Bluetooth, enquanto o **grupo de controlo** manterá o acompanhamento trimestral standard. Serão realizados **momentos de avaliação (follow-up) aos 3 e 6 meses** para medir a evolução dos parâmetros clínicos e comportamentais. O protocolo CONSORT constituirá a norma de referência para o reporte dos resultados, sendo assegurado o seu preenchimento após a finalização do ensaio clínico (Fig.1)
 
-![Fig.1- Fluxograma CONSORT](......\Diagrama%20CONSORT.drawio.png)
+![Fig.1- Fluxograma CONSORT](images/fluxograma_CONSORT%20(1).jpeg){width="592"}
 
 **Características do desenho:**
 
@@ -190,11 +190,11 @@ O participantes poderão obter ajuda para problemas de conectividade, erros de s
 
 Os participantes mantêm o seu cuidado médico habitual nos cuidados de saúde primários, incluindo as consultas programadas com a equipa de medicina familiar e a manutenção da terapêutica farmacológica não-insulínica previamente prescrita.
 
-![Figure 2- Diagrama do percurso como utilizador da aplicação digital](./diagrama%20do%20percurso%20como%20utilizador%20da%20aplicação%20digital.png)
+![Figure 2- Diagrama do percurso como utilizador da aplicação digital](images/Diagrama%20do%20utilizador%20da%20aplicação-2026-03-21-135442%20(1)%20(2).png){width="417"}
 
-![Figure 3- Diagrama de casos de uso para as funcionalidades da app do ensaio clínico](..........\Downloads\WhatsApp%20Image%202026-05-06%20at%2022.27.32.jpeg)
+![Figure 3- Diagrama de casos de uso para as funcionalidades da app do ensaio clínico](images/diag_casos_uso_branco%20(1).png){width="539"}
 
-![Figure 4- Diagrama de sequência da sincronização do glucómetro](..\diagrama%20de%20sequência%20da%20sincronização%20do%20glucómetro.png)
+![Figure 4- Diagrama de sequência da sincronização do glucómetro](images/Untitled%20diagram-2026-03-21-114019%20(1)%20(1).png){width="594"}
 
 #### 2.3.2 Grupo Controlo
 
@@ -224,7 +224,7 @@ Participantes serão retirados do estudo se:
 
 6.  For determinada a cessação da participação pelo investigador principal ou pela comissão de ética por motivos de segurança do participante
 
-![Figure 5- Diagrama do percurso do participante no estudo clínico](..\Diagrama%20do%20percurso%20do%20paciente.png)
+![Figure 5- Diagrama do percurso do participante no estudo clínico](images/Diagrama%20do%20percurso%20do%20paciente%20(1)%20(2).png){width="421"}
 
 ------------------------------------------------------------------------
 
@@ -261,7 +261,7 @@ O plano de análise estatística será executado utilizando o R Studio.
 
 ### 4.1 Tratamento de Dados e Dropouts
 
-Dada a duração de 6 meses e o risco de desistência, será utilizada uma Análise por Intenção de Tratar (ITT). Isto garante que todos os 30 participantes randomizados sejam incluídos na análise, utilizando o método de imputação Last Observation Carried Forward (LOCF) para lidar com dados em falta nas avaliações de follow-up. $`^{5}`$
+Dada a duração de 6 meses e o risco de desistência, será utilizada uma Análise por Intenção de Tratar (ITT). Isto garante que todos os 30 participantes randomizados sejam incluídos na análise, utilizando o método de imputação Last Observation Carried Forward (LOCF) para lidar com dados em falta nas avaliações de follow-up. $^{5}$
 
 ### 4.2 Análise Descritiva
 
@@ -269,7 +269,9 @@ Será realizada uma caracterização demográfica e clínica da amostra no basel
 
 ### 4.3 Testes de Hipóteses
 
-Para avaliar a eficácia da intervenção, serão realizados os seguintes procedimentos: 1. **Comparação entre Grupos (Outcome Primário):** Para comparar a variação da HbA1c entre o grupo de intervenção e o grupo de controlo às 24 semanas, será utilizado o teste t de Student para amostras independentes (para comparar as médias de uma variável contínua entre dois grupos diferentes que não têm relação entre si).
+Para avaliar a eficácia da intervenção, serão realizados os seguintes procedimentos:
+
+1.  **Comparação entre Grupos (Outcome Primário):** Para comparar a variação da HbA1c entre o grupo de intervenção e o grupo de controlo às 24 semanas, será utilizado o teste t de Student para amostras independentes (para comparar as médias de uma variável contínua entre dois grupos diferentes que não têm relação entre si).
 
 2.  **Análise Longitudinal:** Para avaliar o efeito da intervenção ao longo do tempo (Baseline vs. 3 meses vs. 6 meses), será aplicada uma ANOVA de Medidas Repetidas (um teste estatístico usado quando medimos a mesma variável no mesmo grupo de pessoas em vários momentos diferentes), permitindo observar a interação entre o fator “Tempo” e o fator “Grupo”.
 
@@ -277,9 +279,33 @@ Para avaliar a eficácia da intervenção, serão realizados os seguintes proced
 
     -   A correlação entre a frequência de uso da app e a descida da HbA1c será analisada através do coeficiente de correlação de Pearson.
 
-## 5. Ética e dissiminação
+## 5. Ética e disseminação
 
-Este estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam: 1. Consentimento informado. 2. Garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital. 3. Privacidade e proteção de dados. 4. Tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados. 5. Desigualdade no acesso (equidade). 6. Possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica. 7. Sobrecarga do participante. 8. Exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar. 9. Proteção do grupo controlo. 10. Garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção. 11. Gestão de ajustes terapêuticos. 12. Assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.
+Este estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam:
+
+1.  Consentimento informado.
+
+2.  Garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital.
+
+3.  Privacidade e proteção de dados.
+
+4.  Tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados.
+
+5.  Desigualdade no acesso (equidade).
+
+6.  Possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica.
+
+7.  Sobrecarga do participante.
+
+8.  Exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar.
+
+9.  Proteção do grupo controlo.
+
+10. Garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção.
+
+11. Gestão de ajustes terapêuticos.
+
+12. Assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.
 
 ## Prompts de IA:
 
@@ -293,15 +319,15 @@ Este estudo levanta várias preocupações éticas que devem ser cuidadosamente 
 
 ## Referências:
 
-1.  [@houMobilePhoneApplications2016]
+1.  Hou, C., Carter, B., Hewitt, J., Francisa, T. & Mayor, S. Do Mobile Phone Applications Improve Glycemic Control (HbA1c) in the Self-management of Diabetes? A Systematic Review, Meta-analysis, and GRADE of 14 Randomized Trials. *Diabetes Care* **39**, 2089–2095 (2016).
 
-2.  [@greenwoodSystematicReviewReviews2017]
+2.  Greenwood, D. A., Gee, P. M., Fatkin, K. J. & Peeples, M. A Systematic Review of Reviews Evaluating Technology-Enabled Diabetes Self-Management Education and Support. *J. Diabetes Sci. Technol.* **11**, 1015–1027 (2017).
 
-3.  [@brzanMobileApplicationsControl2016]
+3.  Brzan, P. P., Rotman, E., Pajnkihar, M. & Klanjsek, P. Mobile Applications for Control and Self Management of Diabetes: A Systematic Review. *J. Med. Syst.* **40**, 210 (2016).
 
-4.  [@andersonDiabetesEmpowermentScaleShort2003]
+4.  Anderson, R. M., Fitzgerald, J. T., Gruppen, L. D., Funnell, M. M. & Oh, M. S. The Diabetes Empowerment Scale-Short Form (DES-SF). *Diabetes Care* **26**, 1641–1642 (2003).
 
-5.  [@guptaIntentiontotreatConceptReview2011]
+5.  Gupta, S. Intention-to-treat concept: A review. *Perspect. Clin. Res.* **2**, 109 (2011).
 
 ------------------------------------------------------------------------
 
@@ -310,3 +336,41 @@ Este estudo levanta várias preocupações éticas que devem ser cuidadosamente 
 **Data desta versão:** 22/03/2026
 
 **Autores desta versão:** João Dantas, Margarida Machado, Maria Clara Soares
+
+------------------------------------------------------------------------
+
+## Declaração da IA
+
+Neste projeto, as ferramentas de Inteligência Artificial Generativa (IA) — especificamente o **ChatGPT, Gemini e NotebookLM** — foram integradas como auxiliares no processo de desenvolvimento, funcionando principalmente nos níveis 1 e 2 da escala GAI (Primary Creator e Conceptual Architect). O uso da IA foi pautado por uma revisão crítica constante, onde os outputs gerados serviram de base para a tomada de decisão final do grupo.
+
+#### **1. Fases de Aplicação e Metodologia**
+
+A IA foi utilizada em três momentos chave do protocolo:
+
+-   **Fase de Ideação e Estruturação:** Utilizada para o brainstorming do título do projeto e para delinear a estrutura inicial do protocolo SPIRIT.
+
+-   **Apoio Metodológico e Estatístico:** Consulta sobre os testes estatísticos mais adequados (ex: Testes de normalidade de Shapiro-Wilk e testes paramétricos vs. não-paramétricos) para a análise de amostras pequenas (\$n=30\$).
+
+-   **Otimização Técnica (REDCap):** Identificação de potenciais desafios técnicos na plataforma de recolha de dados e sugestões de interoperabilidade.
+
+#### **2. Processo de Tratamento e Decisão**
+
+As respostas da IA não foram aceites de forma acrítica. O grupo aplicou um processo de **"Aceite com Alterações"**, onde as sugestões foram validadas tecnicamente. Por exemplo, sugestões sobre a exequibilidade de recolha de dados no REDCap foram filtradas para garantir que se adequavam à realidade do nosso cenário em estudo.
+
+#### **3. Exemplos de Interação**
+
+Para ilustrar a dinâmica de trabalho com a IA, apresentam-se abaixo exemplos representativos das consultas efetuadas:
+
+-   **Consulta sobre Ética e Proteção de Dados:** \* O que perguntámos: Questionámos se seria adequado substituir os nomes dos participantes apenas pelo número de identificação civil (citizen_id) para garantir o anonimato.
+
+    -   O que obtivemos: A IA desaconselhou o uso do citizen_id por ser um dado sensível, sugerindo em alternativa a criação de um ID interno pseudonimizado (id_record).
+
+    -   Resultado final: O grupo aceitou a recomendação, implementando o id_record para garantir o cumprimento do RGPD e princípios éticos.
+
+-   **Consulta sobre Interpretação de Dados e Estatística:**
+
+    -   O que perguntámos: Orientações sobre como proceder na análise comparativa de eficácia entre o grupo de controlo e o de intervenção.
+
+    -   O que obtivemos: Uma proposta de testes estatísticos (Teste t de Student ou Mann-Whitney U) dependendo da distribuição da amostra.
+
+    -   Resultado final: Esta base permitiu-nos redigir o texto interpretativo dos resultados, focando na variabilidade e significância clínica dos dados observados.

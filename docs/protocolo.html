@@ -250,7 +250,7 @@ window.Quarto = {
 <p>A duração total do estudo é de <strong>6 meses</strong> (24 semanas). A <strong>randomização</strong> será efetuada através de uma sequência gerada por computador para garantir a <strong>ocultação</strong> da alocação. O <strong>grupo de intervenção</strong> utilizará a app GlucoCheck integrada com glucómetro Bluetooth, enquanto o <strong>grupo de controlo</strong> manterá o acompanhamento trimestral standard. Serão realizados <strong>momentos de avaliação (follow-up) aos 3 e 6 meses</strong> para medir a evolução dos parâmetros clínicos e comportamentais. O protocolo CONSORT constituirá a norma de referência para o reporte dos resultados, sendo assegurado o seu preenchimento após a finalização do ensaio clínico (Fig.1)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="......\Diagrama CONSORT.drawio.png" class="img-fluid figure-img"></p>
+<p><img src="images/fluxograma_CONSORT (1).jpeg" class="img-fluid figure-img" width="592"></p>
 <figcaption>Fig.1- Fluxograma CONSORT</figcaption>
 </figure>
 </div>
@@ -375,19 +375,19 @@ window.Quarto = {
 <p>Os participantes mantêm o seu cuidado médico habitual nos cuidados de saúde primários, incluindo as consultas programadas com a equipa de medicina familiar e a manutenção da terapêutica farmacológica não-insulínica previamente prescrita.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./diagrama do percurso como utilizador da aplicação digital.png" class="img-fluid figure-img"></p>
+<p><img src="images/Diagrama do utilizador da aplicação-2026-03-21-135442 (1) (2).png" class="img-fluid figure-img" width="417"></p>
 <figcaption>Figure 2- Diagrama do percurso como utilizador da aplicação digital</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..........\Downloads\WhatsApp Image 2026-05-06 at 22.27.32.jpeg" class="img-fluid figure-img"></p>
+<p><img src="images/diag_casos_uso_branco (1).png" class="img-fluid figure-img" width="539"></p>
 <figcaption>Figure 3- Diagrama de casos de uso para as funcionalidades da app do ensaio clínico</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\diagrama de sequência da sincronização do glucómetro.png" class="img-fluid figure-img"></p>
+<p><img src="images/Untitled diagram-2026-03-21-114019 (1) (1).png" class="img-fluid figure-img" width="594"></p>
 <figcaption>Figure 4- Diagrama de sequência da sincronização do glucómetro</figcaption>
 </figure>
 </div>
@@ -413,7 +413,7 @@ window.Quarto = {
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="..\Diagrama do percurso do paciente.png" class="img-fluid figure-img"></p>
+<p><img src="images/Diagrama do percurso do paciente (1) (2).png" class="img-fluid figure-img" width="421"></p>
 <figcaption>Figure 5- Diagrama do percurso do participante no estudo clínico</figcaption>
 </figure>
 </div>
@@ -464,7 +464,7 @@ window.Quarto = {
 <p>O plano de análise estatística será executado utilizando o R Studio.</p>
 <section id="tratamento-de-dados-e-dropouts" class="level3">
 <h3 class="anchored" data-anchor-id="tratamento-de-dados-e-dropouts">4.1 Tratamento de Dados e Dropouts</h3>
-<p>Dada a duração de 6 meses e o risco de desistência, será utilizada uma Análise por Intenção de Tratar (ITT). Isto garante que todos os 30 participantes randomizados sejam incluídos na análise, utilizando o método de imputação Last Observation Carried Forward (LOCF) para lidar com dados em falta nas avaliações de follow-up. <span class="math inline">\(`^{5}`\)</span></p>
+<p>Dada a duração de 6 meses e o risco de desistência, será utilizada uma Análise por Intenção de Tratar (ITT). Isto garante que todos os 30 participantes randomizados sejam incluídos na análise, utilizando o método de imputação Last Observation Carried Forward (LOCF) para lidar com dados em falta nas avaliações de follow-up. <span class="math inline">\(^{5}\)</span></p>
 </section>
 <section id="análise-descritiva" class="level3">
 <h3 class="anchored" data-anchor-id="análise-descritiva">4.2 Análise Descritiva</h3>
@@ -472,8 +472,9 @@ window.Quarto = {
 </section>
 <section id="testes-de-hipóteses" class="level3">
 <h3 class="anchored" data-anchor-id="testes-de-hipóteses">4.3 Testes de Hipóteses</h3>
-<p>Para avaliar a eficácia da intervenção, serão realizados os seguintes procedimentos: 1. <strong>Comparação entre Grupos (Outcome Primário):</strong> Para comparar a variação da HbA1c entre o grupo de intervenção e o grupo de controlo às 24 semanas, será utilizado o teste t de Student para amostras independentes (para comparar as médias de uma variável contínua entre dois grupos diferentes que não têm relação entre si).</p>
-<ol start="2" type="1">
+<p>Para avaliar a eficácia da intervenção, serão realizados os seguintes procedimentos:</p>
+<ol type="1">
+<li><p><strong>Comparação entre Grupos (Outcome Primário):</strong> Para comparar a variação da HbA1c entre o grupo de intervenção e o grupo de controlo às 24 semanas, será utilizado o teste t de Student para amostras independentes (para comparar as médias de uma variável contínua entre dois grupos diferentes que não têm relação entre si).</p></li>
 <li><p><strong>Análise Longitudinal:</strong> Para avaliar o efeito da intervenção ao longo do tempo (Baseline vs.&nbsp;3 meses vs.&nbsp;6 meses), será aplicada uma ANOVA de Medidas Repetidas (um teste estatístico usado quando medimos a mesma variável no mesmo grupo de pessoas em vários momentos diferentes), permitindo observar a interação entre o fator “Tempo” e o fator “Grupo”.</p></li>
 <li><p><strong>Outcomes Secundários:</strong> A comparação das pontuações da escala de autoeficácia (DES-SF) e satisfação será feita através do teste de Mann-Whitney U (por serem dados ordinais).</p>
 <ul>
@@ -482,9 +483,23 @@ window.Quarto = {
 </ol>
 </section>
 </section>
-<section id="ética-e-dissiminação" class="level2">
-<h2 class="anchored" data-anchor-id="ética-e-dissiminação">5. Ética e dissiminação</h2>
-<p>Este estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam: 1. Consentimento informado. 2. Garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital. 3. Privacidade e proteção de dados. 4. Tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados. 5. Desigualdade no acesso (equidade). 6. Possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica. 7. Sobrecarga do participante. 8. Exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar. 9. Proteção do grupo controlo. 10. Garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção. 11. Gestão de ajustes terapêuticos. 12. Assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.</p>
+<section id="ética-e-disseminação" class="level2">
+<h2 class="anchored" data-anchor-id="ética-e-disseminação">5. Ética e disseminação</h2>
+<p>Este estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam:</p>
+<ol type="1">
+<li><p>Consentimento informado.</p></li>
+<li><p>Garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital.</p></li>
+<li><p>Privacidade e proteção de dados.</p></li>
+<li><p>Tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados.</p></li>
+<li><p>Desigualdade no acesso (equidade).</p></li>
+<li><p>Possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica.</p></li>
+<li><p>Sobrecarga do participante.</p></li>
+<li><p>Exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar.</p></li>
+<li><p>Proteção do grupo controlo.</p></li>
+<li><p>Garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção.</p></li>
+<li><p>Gestão de ajustes terapêuticos.</p></li>
+<li><p>Assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.</p></li>
+</ol>
 </section>
 <section id="prompts-de-ia" class="level2">
 <h2 class="anchored" data-anchor-id="prompts-de-ia">Prompts de IA:</h2>
@@ -496,18 +511,53 @@ window.Quarto = {
 <section id="referências" class="level2">
 <h2 class="anchored" data-anchor-id="referências">Referências:</h2>
 <ol type="1">
-<li><p><span class="citation" data-cites="houMobilePhoneApplications2016">[@houMobilePhoneApplications2016]</span></p></li>
-<li><p><span class="citation" data-cites="greenwoodSystematicReviewReviews2017">[@greenwoodSystematicReviewReviews2017]</span></p></li>
-<li><p><span class="citation" data-cites="brzanMobileApplicationsControl2016">[@brzanMobileApplicationsControl2016]</span></p></li>
-<li><p><span class="citation" data-cites="andersonDiabetesEmpowermentScaleShort2003">[@andersonDiabetesEmpowermentScaleShort2003]</span></p></li>
-<li><p><span class="citation" data-cites="guptaIntentiontotreatConceptReview2011">[@guptaIntentiontotreatConceptReview2011]</span></p></li>
+<li><p>Hou, C., Carter, B., Hewitt, J., Francisa, T. &amp; Mayor, S. Do Mobile Phone Applications Improve Glycemic Control (HbA1c) in the Self-management of Diabetes? A Systematic Review, Meta-analysis, and GRADE of 14 Randomized Trials. <em>Diabetes Care</em> <strong>39</strong>, 2089–2095 (2016).</p></li>
+<li><p>Greenwood, D. A., Gee, P. M., Fatkin, K. J. &amp; Peeples, M. A Systematic Review of Reviews Evaluating Technology-Enabled Diabetes Self-Management Education and Support. <em>J. Diabetes Sci. Technol.</em> <strong>11</strong>, 1015–1027 (2017).</p></li>
+<li><p>Brzan, P. P., Rotman, E., Pajnkihar, M. &amp; Klanjsek, P. Mobile Applications for Control and Self Management of Diabetes: A Systematic Review. <em>J. Med. Syst.</em> <strong>40</strong>, 210 (2016).</p></li>
+<li><p>Anderson, R. M., Fitzgerald, J. T., Gruppen, L. D., Funnell, M. M. &amp; Oh, M. S. The Diabetes Empowerment Scale-Short Form (DES-SF). <em>Diabetes Care</em> <strong>26</strong>, 1641–1642 (2003).</p></li>
+<li><p>Gupta, S. Intention-to-treat concept: A review. <em>Perspect. Clin. Res.</em> <strong>2</strong>, 109 (2011).</p></li>
 </ol>
 <hr>
 <p><strong>Versão:</strong> 1.0</p>
 <p><strong>Data desta versão:</strong> 22/03/2026</p>
 <p><strong>Autores desta versão:</strong> João Dantas, Margarida Machado, Maria Clara Soares</p>
+<hr>
+</section>
+<section id="declaração-da-ia" class="level2">
+<h2 class="anchored" data-anchor-id="declaração-da-ia">Declaração da IA</h2>
+<p>Neste projeto, as ferramentas de Inteligência Artificial Generativa (IA) — especificamente o <strong>ChatGPT, Gemini e NotebookLM</strong> — foram integradas como auxiliares no processo de desenvolvimento, funcionando principalmente nos níveis 1 e 2 da escala GAI (Primary Creator e Conceptual Architect). O uso da IA foi pautado por uma revisão crítica constante, onde os outputs gerados serviram de base para a tomada de decisão final do grupo.</p>
+<section id="fases-de-aplicação-e-metodologia" class="level4">
+<h4 class="anchored" data-anchor-id="fases-de-aplicação-e-metodologia"><strong>1. Fases de Aplicação e Metodologia</strong></h4>
+<p>A IA foi utilizada em três momentos chave do protocolo:</p>
+<ul>
+<li><p><strong>Fase de Ideação e Estruturação:</strong> Utilizada para o brainstorming do título do projeto e para delinear a estrutura inicial do protocolo SPIRIT.</p></li>
+<li><p><strong>Apoio Metodológico e Estatístico:</strong> Consulta sobre os testes estatísticos mais adequados (ex: Testes de normalidade de Shapiro-Wilk e testes paramétricos vs.&nbsp;não-paramétricos) para a análise de amostras pequenas ($n=30$).</p></li>
+<li><p><strong>Otimização Técnica (REDCap):</strong> Identificação de potenciais desafios técnicos na plataforma de recolha de dados e sugestões de interoperabilidade.</p></li>
+</ul>
+</section>
+<section id="processo-de-tratamento-e-decisão" class="level4">
+<h4 class="anchored" data-anchor-id="processo-de-tratamento-e-decisão"><strong>2. Processo de Tratamento e Decisão</strong></h4>
+<p>As respostas da IA não foram aceites de forma acrítica. O grupo aplicou um processo de <strong>“Aceite com Alterações”</strong>, onde as sugestões foram validadas tecnicamente. Por exemplo, sugestões sobre a exequibilidade de recolha de dados no REDCap foram filtradas para garantir que se adequavam à realidade do nosso cenário em estudo.</p>
+</section>
+<section id="exemplos-de-interação" class="level4">
+<h4 class="anchored" data-anchor-id="exemplos-de-interação"><strong>3. Exemplos de Interação</strong></h4>
+<p>Para ilustrar a dinâmica de trabalho com a IA, apresentam-se abaixo exemplos representativos das consultas efetuadas:</p>
+<ul>
+<li><p><strong>Consulta sobre Ética e Proteção de Dados:</strong> * O que perguntámos: Questionámos se seria adequado substituir os nomes dos participantes apenas pelo número de identificação civil (citizen_id) para garantir o anonimato.</p>
+<ul>
+<li><p>O que obtivemos: A IA desaconselhou o uso do citizen_id por ser um dado sensível, sugerindo em alternativa a criação de um ID interno pseudonimizado (id_record).</p></li>
+<li><p>Resultado final: O grupo aceitou a recomendação, implementando o id_record para garantir o cumprimento do RGPD e princípios éticos.</p></li>
+</ul></li>
+<li><p><strong>Consulta sobre Interpretação de Dados e Estatística:</strong></p>
+<ul>
+<li><p>O que perguntámos: Orientações sobre como proceder na análise comparativa de eficácia entre o grupo de controlo e o de intervenção.</p></li>
+<li><p>O que obtivemos: Uma proposta de testes estatísticos (Teste t de Student ou Mann-Whitney U) dependendo da distribuição da amostra.</p></li>
+<li><p>Resultado final: Esta base permitiu-nos redigir o texto interpretativo dos resultados, focando na variabilidade e significância clínica dos dados observados.</p></li>
+</ul></li>
+</ul>
 
 
+</section>
 </section>
 </section>
 
