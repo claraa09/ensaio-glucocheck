@@ -20,11 +20,11 @@ Ensaio clínico aleatorizado paralelo (1:1) sobre a eficácia de uma aplicação
 
 <ul>
 
-<li><a href="protocolo.html">Protocolo</a>: desenho do estudo e SPIRIT</li>
+<li><a href="protocolo.html">Protocolo</a>: protocolo SPIRIT</li>
 
-<li><a href="materiais.html">Materiais</a>: eCRF, REDCap e protótipo</li>
+<li><a href="materiais.html">Materiais</a>: diagramas, eCRF, dicionário de dados, REDCap e protótipo</li>
 
-<li><a href="resultados.html">Resultados</a>: análise do outcome primário</li>
+<li><a href="resultados.html">Resultados</a>: fluxograma CONSORT, caracterização da amostra, outcome primário, outcomes secundários e resultados globais</li>
 
 <li><a href="equipa.html">Equipa</a>: membros e contactos</li>
 
