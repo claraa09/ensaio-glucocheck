@@ -106,7 +106,7 @@ A duração total do estudo é de **6 meses** (24 semanas). A **randomização**
 **Timeline:**
 
 | Fase | Duração | Descrição |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Recrutamento | \[2 semanas\] | Triagem de processos clínicos e convite em consulta médica. |
 | Baseline | \[1 semana\] | Consentimento, colheita de sangue (HbA1c) e randomização. |
 | Intervenção | \[21 semanas\] | Período de utilização da App (Intervenção) vs. Cuidados Standard. |
