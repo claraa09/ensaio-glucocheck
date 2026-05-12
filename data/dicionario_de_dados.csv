@@ -1,0 +1,57 @@
+﻿Variable / Field Name;Form Name;Section Header;Field Type;Field Label;Choices, Calculations, OR Slider Labels;Field Note;Text Validation Type OR Show Slider Number;Text Validation Min;Text Validation Max;Identifier?;Branching Logic (Show field only if...);Required Field?;Custom Alignment;Question Number (surveys only);Matrix Group Name;Matrix Ranking?;Field Annotation
+id_record;consent;;text;ID do participante;;Código único do participante;;;;y;;y;;;;;
+ic_signed;consent;;radio;O participante assinou o consentimento informado?;1, Sim | 0, Não;;;;;;;y;;;;;
+ic_date;consent;;text;Data do consentimento informado;;;date_dmy;;current date;;[ic_signed] = '1';y;;;;;
+ic_copy;consent;;radio;Foi fornecida uma cópia do consentimento ao participante?;1, Sim | 0, Não;;;;;;[ic_signed] = '1';y;;;;;
+consent_warning;consent;;descriptive;Atenção: é obrigatório fornecer uma cópia do consentimento informado ao paciente. Por favor, proceda a entrega!;;;;;;;[ic_copy]='0';;;;;;
+consent_document;consent;;file;Submissão da cópia digitalizada do Consentimento Informado devidamente assinado.;;;;;;;[ic_signed]='1';y;;;;;
+age;demographics;Dados Demográficos;text;Idade;;Entre 40-75 anos;integer;40;75;;;y;;;;;
+gender;demographics;;radio;Género;1, Masculino | 2, Feminino | 3, Outro;;;;;;;y;;;;;
+edu_level;demographics;;radio;Nível de escolaridade;1, Ensino básico | 2, Ensino secundário | 3, Ensino superior;;;;;;;;;;;;
+employment;demographics;;radio;Situação profissional;1, Empregado | 2, Desempregado | 3, Estudante | 4, Reformado;;;;;;;;;;;;
+dm2_diagnostic;baseline;Dados Iniciais (baseline);radio;Diagnóstico confirmado de Diabetes Mellitus tipo 2? ;1, Sim | 0, Não;;;;;;;y;;;;;
+dm2_years;baseline;;text;Anos com Diabetes Mellitus 2;;;integer;0;75;;[dm2_diagnostic]='1';;;;;;
+hba1c_base;baseline;;text;Hemoglobina glicada (HbA1c) Inicial (%);;Entre 7.0-9.5%;number;7.0;9.5;;[dm2_diagnostic]='1';y;RH;;;;" @PLACEHOLDER=""0.0"""
+weight_base;baseline;;text;Peso Corporal Inicial (kg);;;number;30;250;;[dm2_diagnostic]='1';y;RH;;;;
+fbg_base;baseline;;text;Glicemia em Jejum Inicial (mg/dL);;Entre 40-600 mg/dL;integer;40;600;;[dm2_diagnostic]='1';y;RH;;;;
+des_sf_score_base;baseline;;text;Pontuação Total DES-SF inicial;;Entre 8-40;integer;8;40;;[dm2_diagnostic]='1';y;RH;;;;
+literacy_base;baseline;;radio;Conhecimento sobre Diabetes;1, Muito | 2, Algum | 3, Pouco | 4, Nenhum;;;;;;[dm2_diagnostic]='1';y;RH;;;;
+insuline_ad;baseline;;radio;O doente está atualmente a fazer insulina?;1, Sim | 0, Não;A toma de insulina é um critério de exclusão do estudo.;;;;;[dm2_diagnostic]='1';y;;;;;
+med_current;baseline;;checkbox;Medicação atual;1, Analgésicos/Antipiréticos | 2, Anti-hipertensores | 3, Estatinas/Hipolipemiantes | 4, Anticoagulantes | 5, Psicotrópricos (Antidepressivos/Ansiolíticos) | 6, Antiagregantes | 7, Antidiabéticos | 8, Corticosteroides | 9, Outros | 10, Nenhuma medicação atual;Selecione a(s) opção(s) correspondentes à medicação atual.;;;;;[dm2_diagnostic]='1' and [insuline_ad]='0';y;;;;;
+analg_ad;baseline;;text;Especificar o(s) Analgésico(s)/Antipirético(s).;;;;;;;[med_current(1)] = '1' and [dm2_diagnostic] = '1';;;;;;
+antih_ad;baseline;;text;Especificar o(s) Anti-hipertensor(es).;;;;;;;[med_current(2)] = '1' and [dm2_diagnostic] = '1';;;;;;
+est_ad;baseline;;text;Especificar a(s) Estatinas/Hipolipemiantes.;;;;;;;[med_current(3)] = '1' and [dm2_diagnostic] = '1';;;;;;
+antico_ad;baseline;;text;Especificar o(s) Anticoagulante(s).;;;;;;;[med_current(4)] = '1' and [dm2_diagnostic] = '1';;;;;;
+psico_ad;baseline;;text;Especificar o(s) Psicotrópico(s)(Antidepressivo(s)/Ansiolítico(s)).;;;;;;;[med_current(5)] = '1' and [dm2_diagnostic] = '1';;;;;;
+antiag_ad;baseline;;text;Especificar o(s) Antiagregante(s).;;;;;;;[med_current(6)] = '1' and [dm2_diagnostic] = '1';;;;;;
+antidia_ad;baseline;;text;Especificar o(s) Antidiabético(s).;;;;;;;[med_current(7)] = '1' and [dm2_diagnostic] = '1';;;;;;
+cortic_ad;baseline;;text;Especificar o(s) Corticosteroide(s).;;;;;;;[med_current(8)] = '1' and [dm2_diagnostic] = '1';;;;;;
+outro_ad;baseline;;text;Especificar outros.;;;;;;;[med_current(9)] = '1' and [dm2_diagnostic] = '1';;;;;;
+antib_ad;baseline;;radio;Uso de antibióticos nos últimos 30 dias?;1, Sim | 0, Não;;;;;;[dm2_diagnostic]='1' and [insuline_ad]='0';y;;;;;
+antib_explain;baseline;;text;Especificar o antibiótico.;;;;;;;[dm2_diagnostic]='1' and [insuline_ad]='0' and [antib_ad] = '1';;;;;;
+randomization;baseline;;radio;Grupo de Alocação (Randomização);1, Grupo Intervenção (App GlucoCkeck) | 2, Grupo Controlo (Cuidados Convencionais);;;;;;[dm2_diagnostic]='1' and [insuline_ad]='0';y;LV;;;;
+ae_occurred_1;month_3;Avaliações Intermédias (mês 3);radio;Ocorreu algum evento adverso neste período?;1, Sim | 0, Não;Considere: episódios de hipoglicemia, reações alérgicas, quedas ou hospitalizações.;;;;;;y;RH;;;;
+weight_m3;month_3;;text;Peso aos 3 meses (kg);;;number;30;250;;;y;RH;;;;
+fbg_m3;month_3;;text;Glicemia em Jejum aos 3 meses (mg/dL);;;integer;40;600;;;y;RH;;;;
+med_changes;month_3;;radio;Houve alterações na medicação desde a última visita?;1, Sim | 2, Não;;;;;;;y;LV;;;;
+med_changes_text;month_3;;notes;Medicamentos Alterados;;;;;;;[med_changes] = '1';y;;;;;
+ae_occurred_2;month_6;Avaliações Finais (mês 6 );radio;Ocorreu algum evento adverso neste período?;1, Sim | 0, Não;;;;;;;y;RH;;;;
+hba1c_m6;month_6;;text;Hemoglobina Glicada (HbA1c) aos 6 meses (%);;;number;2.0;20.0;;;y;RH;;;;
+weight_m6;month_6;;text;Peso aos 6 meses (kg);;;number;30;250;;;y;RH;;;;
+diet_log_adherence_m6;month_6;;radio;Adesão ao registo alimentar;1, Muito | 2, Algum | 3, Pouco | 4, Nenhum;;;;;;[randomization] ='1';y;RH;;;;
+des_sf_score;month_6;;text;Pontuação Total DES-SF;;;integer;8;40;;;y;RH;;;;
+literacy_m6;month_6;;radio;Conhecimento sobre Diabetes ;1, Muito | 2, Algum | 3, Pouco | 4, Nenhum;;;;;;;y;RH;;;;
+ae_term;adverse_events;Eventos Adversos;text;Qual foi o evento adverso?;;Termo clínico breve;;;;;;y;LV;;;;
+ae_desc;adverse_events;;notes;Descrição detalhada do evento;;Detalhes adicionais;;;;;;;;;;;
+ae_start_date;adverse_events;;text;Data de início do evento adverso;;;date_dmy;;;;;y;;;;;
+ae_end;adverse_events;;radio;O evento terminou?;1, Sim | 0, Não;;;;;;;y;RH;;;;
+ae_end_date;adverse_events;;text;Data de fim do evento;;;date_dmy;;;;[ae_end]='1';y;;;;;
+ae_severity;adverse_events;;dropdown;Gravidade do evento;1, Leve | 2, Moderado | 3, Grave;;;;;;;y;RH;;;;
+ae_serious;adverse_events;;radio;É um evento adverso grave?;1, Sim | 0, Não;Ver critérios de gravidade;;;;;;y;RH;;;;
+ae_related;adverse_events;;dropdown;Relação com a intervenção;0, Não relacionado | 1, Possível | 2, Definida;Avaliação do investigador;;;;;;y;RH;;;;
+ae_outcome;adverse_events;;dropdown;Desfecho do evento;1, Resolvido | 2, Em resolução | 3, Sequelas | 4, Óbito;;;;;;;y;RH;;;;
+satisfaction;conclusion;Encerramento do estudo;slider;Nível de satisfação com os cuidados digitais e a aplicação Gluco Check;0, Muito Insatisfeito | 50, Neutro | 100, Muito Satisfeito;;number;;;;[randomization]= '1';y;LV;;;; @DISPLAY-VALUE
+study_status;conclusion;;dropdown;Estado final da participação;1, Concluiu Protocolo | 2, Desistência | 3, Erro de Elegibilidade | 4, Óbito | 5, Outro;;;;;;;y;RH;;;;
+end_date;conclusion;;text;Data de Conclusão/Saída;;Formato: DD-MM-AAAA;date_dmy;;;;;y;RH;;;; @ TODAY
+disc_reason;conclusion;;notes;Motivo detalhado da Saída;;;;;;;[study_status] <> '1';;RH;;;;
+iventigator_sig;conclusion;;text;Nome do investigador responsável;;;;;;;;y;RH;;;;

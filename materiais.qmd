@@ -18,7 +18,7 @@ Diagrama do percurso como utilizador da aplicação digital
 
 ### Diagrama de Casos de Uso
 
-![](images/casos%20de%20uso-01.png){width="811"}
+![](images/diag_casos_uso_branco%20(1)-01.png)
 
 ### Diagrama de Sequências
 
@@ -32,7 +32,13 @@ A gestão de dados do ensaio Glucocheck foi desenhada para garantir a integridad
 
 O formulário de recolha de dados foi estruturado para capturar todas as variáveis essenciais do protocolo SPIRIT.
 
-[📄 Visualizar Modelo do CRF (PDF)](data/CRF.pdf)
+-   <a href="data/CRF.pdf" target="_blank">📄 CRF no formato PDF </a>
+
+### Dicionário de Dados
+
+O dicionário de dados define a estrutura da base de dados do ensaio, detalhando o significado de cada variável, os formatos de codificação e as regras de validação para garantir a qualidade da análise estatística.
+
+-   <a href="data/dicionario_de_dados.csv" target="_blank">📄 Dicionário de Dados no formato CSV </a>
 
 ### Plataforma REDCap
 
