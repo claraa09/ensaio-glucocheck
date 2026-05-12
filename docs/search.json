@@ -180,5 +180,33 @@
     "title": "Protocolo SPIRIT",
     "section": "Download do Documento",
     "text": "Download do Documento\nPode descarregar o protocolo no seguinte formato:\n\n📄 Protocolo em PDF\n\n\n\nTitle: “Gluco Check” : Ensaio Clínico Randomizado”\nAuthor: “Grupo 9 - Turma C”\nDate: “2026-03-22”"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ensaio GlucoCheck",
+    "section": "",
+    "text": "Ensaio clínico aleatorizado paralelo (1:1) sobre a eficácia de uma aplicação móvel no controlo da Diabetes Mellitus Tipo 2."
+  },
+  {
+    "objectID": "index.html#sumário",
+    "href": "index.html#sumário",
+    "title": "Ensaio GlucoCheck",
+    "section": "Sumário",
+    "text": "Sumário\n\nPopulação: Adultos entre 40 e 75 anos com Diabetes Tipo 2 e HbA1c entre 7,0% e 9,5%.\nIntervenção: Uso da App GlucoCheck sincronizada com glucómetro Bluetooth + registo alimentar durante 24 semanas (6 meses).\nControlo: Cuidados habituais da USF com material educativo em papel.\nOutcome primário: Variação da Hemoglobina Glicada (HbA1c) entre o Baseline (T0) e os 6 meses (T6M).\nN: 30 participantes (15 por grupo)."
+  },
+  {
+    "objectID": "index.html#navegação",
+    "href": "index.html#navegação",
+    "title": "Ensaio GlucoCheck",
+    "section": "Navegação",
+    "text": "Navegação\n\n\nProtocolo: desenho do estudo e SPIRIT\n\n\nMateriais: eCRF, REDCap e protótipo\n\n\nResultados: análise do outcome primário\n\n\nEquipa: membros e contactos"
+  },
+  {
+    "objectID": "index.html#processo-de-recrutamento",
+    "href": "index.html#processo-de-recrutamento",
+    "title": "Ensaio GlucoCheck",
+    "section": "Processo de Recrutamento",
+    "text": "Processo de Recrutamento\nO recrutamento é feito em 5 etapas principais:\n\nExtração de dados do sistema informático da USF para identificar candidatos.\nConvite inicial feito pelo Médico de Família na consulta de rotina.\nSessão de esclarecimento com o Investigador Principal.\nVerificação final de critérios e assinatura do Consentimento (TCLE).\nColheita de sangue para HbA1c baseline e randomização 1:1 gerada por computador."
   }
 ]
