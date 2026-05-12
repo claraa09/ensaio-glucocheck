@@ -5,7 +5,7 @@ format: html
 
 Nesta página pode consultar o protocolo detalhado do ensaio clínico, seguindo as normas SPIRIT.
 
-## Download dos Documentos
+## Download do Documento
 
 Pode descarregar o protocolo no seguinte formato:
 
@@ -106,7 +106,7 @@ A duração total do estudo é de **6 meses** (24 semanas). A **randomização**
 **Timeline:**
 
 | Fase | Duração | Descrição |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | Recrutamento | \[2 semanas\] | Triagem de processos clínicos e convite em consulta médica. |
 | Baseline | \[1 semana\] | Consentimento, colheita de sangue (HbA1c) e randomização. |
 | Intervenção | \[21 semanas\] | Período de utilização da App (Intervenção) vs. Cuidados Standard. |
@@ -283,29 +283,17 @@ Para avaliar a eficácia da intervenção, serão realizados os seguintes proced
 
 Este estudo levanta várias preocupações éticas que devem ser cuidadosamente acauteladas, das quais se destacam:
 
-1.  Consentimento informado.
+1.  **Consentimento informado:** garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital.
 
-2.  Garantir compreensão clara do estudo e da app, especialmente devido à possível baixa literacia digital.
+2.  **Privacidade e proteção de dados:** tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados.
 
-3.  Privacidade e proteção de dados.
+3.  **Desigualdade no acesso (equidade):** possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica.
 
-4.  Tratamento seguro de dados de saúde sensíveis, em conformidade com o Regulamento Geral sobre a Proteção de Dados.
+4.  **Sobrecarga do participante:** exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar.
 
-5.  Desigualdade no acesso (equidade).
+5.  **Proteção do grupo controlo:** garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção.
 
-6.  Possível exclusão ou desvantagem de participantes com menor acesso ou competência tecnológica.
-
-7.  Sobrecarga do participante.
-
-8.  Exigência de registo alimentar frequente e uso contínuo da app pode afetar adesão e bem-estar.
-
-9.  Proteção do grupo controlo.
-
-10. Garantir que recebe cuidados padrão adequados, sem prejuízo por não ter acesso à intervenção.
-
-11. Gestão de ajustes terapêuticos.
-
-12. Assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.
+6.  **Gestão de ajustes terapêuticos:** assegurar que decisões clínicas (ex.: alteração de medicação) não sejam atrasadas ou condicionadas pelo protocolo do estudo.
 
 ## Prompts de IA:
 
