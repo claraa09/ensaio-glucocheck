@@ -85,7 +85,7 @@ ggplot(dados |> filter(!is.na(hba1c_6meses)),
   theme(legend.position = "none")
 ```
 
-A análise do outcome primário (Figura X) revela uma redução clinicamente relevante da Hemoglobina Glicada (HbA1c) no grupo submetido à intervenção **GlucoCheck** em relação ao grupo controlo.
+A análise do outcome primário (Figura X) revela uma redução clinicamente relevante da Hemoglobina Glicada (HbA1c) no grupo submetido à intervenção GlucoCheck em relação ao grupo controlo.
 
 Enquanto o grupo controlo manteve uma mediana de HbA1c superior a 8%, com uma distribuição de dados relativamente homogénea, o grupo de intervenção apresentou uma mediana inferior (\~7,5%). Observa-se, no entanto, uma maior heterogeneidade nos resultados do grupo experimental; a presença de "whiskers" (bigodes) mais extensos e uma maior dispersão dos pontos individuais sugerem que, embora a intervenção seja eficaz de forma global, a resposta individual ao protocolo variou significativamente. Esta variabilidade pode indicar a influência de fatores como a adesão ao dispositivo ou diferenças na resposta biológica individual.
 
@@ -137,7 +137,7 @@ tabela_dessf <- dados |>
 tabela_dessf
 ```
 
-Os resultados da escala DES-SF mostram que os utilizadores da aplicação apresentam uma maior confiança e capacidade de autogestão da sua doença. Eles ganharam mais confiança para tomar decisões sobre a sua alimentação e medicação. Em termos práticos, quem usou a **GlucoCheck** sente-se mais capaz de gerir a diabetes sozinho do que quem não teve acesso à ferramenta digital.
+Os resultados da escala DES-SF mostram que os utilizadores da aplicação apresentam uma maior confiança e capacidade de autogestão da sua doença. Eles ganharam mais confiança para tomar decisões sobre a sua alimentação e medicação. Em termos práticos, quem usou a aplicação GlucoCheck sente-se mais capaz de gerir a diabetes sozinho do que quem não teve acesso à ferramenta digital.
 
 #### Variação do peso e IMC
 
@@ -186,7 +186,7 @@ tabela_satisfacao <- dados |>
 tabela_satisfacao
 ```
 
-O grupo de intervenção deu uma nota muito positiva à experiência de uso (média próxima do máximo na escala). Os utilizadores destacaram a facilidade de ligar o aparelho de medição ao telemóvel por Bluetooth e o facto de não terem de escrever os valores à mão num papel. Esta alta satisfação é um bom sinal para que o projeto seja expandido no futuro.
+O grupo de intervenção atribuiu uma pontuação média elevada à experiência de uso, com valores próximos do máximo da escala. Este resultado quantitativo indica uma excelente aceitação da tecnologia e sugere que a aplicação é uma ferramenta prática para o dia a dia dos doentes, sendo um indicador positivo para a viabilidade do projeto em larga escala.
 
 ### Resumo global dos resultados
 
@@ -195,7 +195,7 @@ O grupo de intervenção deu uma nota muito positiva à experiência de uso (mé
 #| message: false
 #| warning: false
 #| label: tbl-resultados-finais
-#| tbl-cap: "Tabela 2: Resumo global dos resultados (Baseline vs. 6 meses)."
+#| tbl-cap: "Resumo global dos resultados (Baseline vs. 6 meses)."
 
 tabela_final <- dados |>
   select(grupo, idade, sexo, hba1c_baseline, hba1c_6meses, 
@@ -217,14 +217,14 @@ tabela_final
 
 Esta tabela é o balanço final do estudo e revela um contraste importante entre os dois principais indicadores de saúde:
 
--   **Glicemia em Jejum (**$p = 0,038$): Este é o resultado mais forte. Como o valor de $p$ é inferior a $0,05$, temos **prova estatística** de que a aplicação **GlucoCheck** ajudou os doentes a reduzir o açúcar no sangue ao acordar. A aplicação teve um impacto direto e imediato nas medições diárias.
+-   **Glicemia em Jejum (**$p = 0,038$): Este é o resultado mais forte. Como o valor de $p$ é inferior a $0,05$, temos uma prova estatística de que a aplicação GlucoCheck ajudou os doentes a reduzir o açúcar no sangue em jejum. Sendo assim, a aplicação teve um impacto direto e imediato nas medições diárias.
 
 -   **HbA1c - Hemoglobina Glicada (**$p = 0,11$): Embora tenha havido uma descida no grupo da app, o valor de $p$ é superior a $0,05$. Isto significa que a diferença ainda não é "matematicamente certa".
 
     -   **Porquê a diferença?** A Glicemia muda dia após dia com o uso da app, enquanto a HbA1c é uma média de 3 meses. Com apenas 30 pessoas, é mais difícil provar estatisticamente a descida da HbA1c, embora a tendência clínica seja positiva.
 
--   **Peso e Autoeficácia:** Notamos que quem usou a app teve uma melhor gestão do peso e sentiu-se muito mais confiante (pontuações mais altas na escala DES-SF) para lidar com a doença.
+-   **Peso e Autoeficácia:** Notou-se que o grupo de intervenção apresentou uma melhor gestão do peso e uma maior confiança (pontuações mais elevadas na escala DES-SF) na autogestão da doença.
 
 -   **Satisfação:** A nota elevada dada à aplicação confirma que a tecnologia foi bem aceite e facilitou a vida dos doentes, o que explica a melhoria nos resultados da glicemia.
 
-**Em resumo:** A **GlucoCheck** provou ser eficaz no controlo do açúcar diário e no bem-estar dos doentes, mesmo que a média de longo prazo (HbA1c) precise de mais tempo ou de um grupo maior para mostrar resultados estatísticos definitivos.
+**Em resumo:** A aplicação GlucoCheck provou ser eficaz no controlo do açúcar diário e no bem-estar dos doentes, mesmo que a média de longo prazo (HbA1c) precise de mais tempo ou de um grupo maior para mostrar resultados estatísticos definitivos.
