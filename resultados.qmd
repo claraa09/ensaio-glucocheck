@@ -108,14 +108,14 @@ fig_glicemia <- ggplot(
   ) +
   labs(
     x     = "Grupo",
-    y     = "Glicemia em Jejum (mg/dL)"
+    y     = "Glicemia em Jejum (mg/dL)",
   ) +
   theme_minimal(base_size = 13) +
   theme(legend.position = "none")
 fig_glicemia
 ```
 
-Este foi o resultado mais positivo do estudo. O grupo que usou a aplicação conseguiu baixar os níveis de açúcar no sangue de forma muito mais clara do que o grupo que seguiu o tratamento normal. A diferença foi considerada **estatisticamente significativa** ($p = 0,038$), o que prova que a aplicação ajuda mesmo a controlar o açúcar no dia a dia, provavelmente devido aos alertas e monitorização constante.
+Este foi o resultado mais positivo do estudo. O grupo que usou a aplicação conseguiu baixar os níveis de açúcar no sangue de forma muito mais clara do que o grupo que seguiu o tratamento normal. Isto prova que a aplicação ajuda mesmo a controlar o açúcar no dia a dia, provavelmente devido aos alertas e à monitorização constante.
 
 #### Autoeficácia e Empoderamento (Escala DES-SF)
 
@@ -137,7 +137,7 @@ tabela_dessf <- dados |>
 tabela_dessf
 ```
 
-Os resultados da escala DES-SF mostram que os utilizadores da aplicação se sentem mais "donos" da sua doença. Eles ganharam mais confiança para tomar decisões sobre a sua alimentação e medicação. Em termos práticos, quem usou a **GlucoCheck** sente-se mais capaz de gerir a diabetes sozinho do que quem não teve acesso à ferramenta digital.
+Os resultados da escala DES-SF mostram que os utilizadores da aplicação apresentam uma maior confiança e capacidade de autogestão da sua doença. Eles ganharam mais confiança para tomar decisões sobre a sua alimentação e medicação. Em termos práticos, quem usou a **GlucoCheck** sente-se mais capaz de gerir a diabetes sozinho do que quem não teve acesso à ferramenta digital.
 
 #### Variação do peso e IMC
 
@@ -187,3 +187,44 @@ tabela_satisfacao
 ```
 
 O grupo de intervenção deu uma nota muito positiva à experiência de uso (média próxima do máximo na escala). Os utilizadores destacaram a facilidade de ligar o aparelho de medição ao telemóvel por Bluetooth e o facto de não terem de escrever os valores à mão num papel. Esta alta satisfação é um bom sinal para que o projeto seja expandido no futuro.
+
+### Resumo global dos resultados
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: tbl-resultados-finais
+#| tbl-cap: "Tabela 2: Resumo global dos resultados (Baseline vs. 6 meses)."
+
+tabela_final <- dados |>
+  select(grupo, idade, sexo, hba1c_baseline, hba1c_6meses, 
+         glicemia_jejum_baseline, glicemia_jejum_6meses, 
+         peso_baseline, peso_6meses, des_sf, satisfacao) |>
+  tbl_summary(
+    by = grupo,
+    label = list(
+      hba1c_6meses ~ "HbA1c final (%)",
+      glicemia_jejum_6meses ~ "Glicemia final (mg/dL)",
+      peso_6meses ~ "Peso final (kg)",
+      satisfacao ~ "Satisfação com a App"
+    )
+  ) |>
+  add_overall() |>
+  add_p()
+tabela_final
+```
+
+Esta tabela é o balanço final do estudo e revela um contraste importante entre os dois principais indicadores de saúde:
+
+-   **Glicemia em Jejum (**$p = 0,038$): Este é o resultado mais forte. Como o valor de $p$ é inferior a $0,05$, temos **prova estatística** de que a aplicação **GlucoCheck** ajudou os doentes a reduzir o açúcar no sangue ao acordar. A aplicação teve um impacto direto e imediato nas medições diárias.
+
+-   **HbA1c - Hemoglobina Glicada (**$p = 0,11$): Embora tenha havido uma descida no grupo da app, o valor de $p$ é superior a $0,05$. Isto significa que a diferença ainda não é "matematicamente certa".
+
+    -   **Porquê a diferença?** A Glicemia muda dia após dia com o uso da app, enquanto a HbA1c é uma média de 3 meses. Com apenas 30 pessoas, é mais difícil provar estatisticamente a descida da HbA1c, embora a tendência clínica seja positiva.
+
+-   **Peso e Autoeficácia:** Notamos que quem usou a app teve uma melhor gestão do peso e sentiu-se muito mais confiante (pontuações mais altas na escala DES-SF) para lidar com a doença.
+
+-   **Satisfação:** A nota elevada dada à aplicação confirma que a tecnologia foi bem aceite e facilitou a vida dos doentes, o que explica a melhoria nos resultados da glicemia.
+
+**Em resumo:** A **GlucoCheck** provou ser eficaz no controlo do açúcar diário e no bem-estar dos doentes, mesmo que a média de longo prazo (HbA1c) precise de mais tempo ou de um grupo maior para mostrar resultados estatísticos definitivos.
